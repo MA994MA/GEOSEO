@@ -1,4 +1,4 @@
-# Marketing-Cockpit PageCompliance · Konzept v0.1
+# Marketing-Cockpit PageCompliance · Konzept v0.2
 
 Stand: 23.10.2026 · Massi + Claude · Umsetzung: Leon
 
@@ -17,6 +17,30 @@ und verbindet sie.
 | Leon | veröffentlicht, verbindet Schnittstellen, pflegt Technik-Checks |
 
 Später möglich: Teile davon als Funktion im Produkt (siehe unten).
+
+## Entscheidungen (23.10.)
+
+| # | Frage | Entscheidung |
+| --- | --- | --- |
+| 1 | Nutzer | nur intern; Prüf-Engine so bauen, dass sie später ins Produkt kann |
+| 2 | Module Phase 1 | Blog-Editor mit SEO/GEO + HWG-Check, GEO-Monitoring, Mail-Strecken + Signale |
+| 3 | Schreiben | beides: KI-Entwurf in der App **oder** Text von extern einfügen |
+| 4 | Startseite | „Diese Woche“: Wochensatz und Status aller Formate |
+| 5 | GEO-Panel | ChatGPT, Perplexity, Google AI Overviews / Gemini, Claude, Copilot |
+| 6 | Signale | Twenty bleibt die Wahrheit, die App zeigt nur Übersicht und „heute anrufen“ |
+| 7 | Design | klickbarer HTML-Prototyp im Look von PageCompliance App v3 / Aurora v2 |
+
+## Navigation (Vorschlag)
+
+Wie in der App v3: Logo links, Reiter oben, Profil rechts.
+
+| Reiter | Inhalt |
+| --- | --- |
+| Diese Woche | Startseite: Wochensatz, Formate mit Status, Anrufliste kurz, 3 Kennzahlen |
+| Schreiben | Blog-Artikel und Mails: Liste, Editor, Checks, Freigabe |
+| Sichtbarkeit | Prompt-Panel, Läufe, Trend, Quellen |
+| Strecken | Mail-Strecken, Mails je Strecke, Regeln, Signale (aus Twenty) |
+| Keywords | Keyword-Universum (222), Zuordnung zu Artikeln, Wellen |
 
 ## Module (Phase 1)
 
@@ -44,6 +68,13 @@ Ablauf: Prompts pflegen → regelmäßig gegen KI-Assistenten laufen lassen → 
 - Trend: Nennungsrate pro Woche, pro Tür, pro Assistent
 - Grenze: Antworten über API können von dem abweichen, was Nutzer in der App sehen
   (Websuche, Personalisierung). Das muss im Dashboard sichtbar sein.
+- Datenquellen je Assistent (Recherche 23.10., Anbieterangaben, nicht verifiziert):
+  - ChatGPT, Perplexity, Claude, Gemini: offizielle APIs vorhanden
+  - Google AI Overviews: keine offizielle API; SERP-APIs von Drittanbietern liefern sie
+    (u. a. DataForSEO seit 08/2024, SerpApi). Erscheinen nur, wenn Google eine ausspielt.
+  - Copilot (Consumer): keine offizielle API gefunden; nur Drittanbieter-Scraper,
+    Nutzungsbedingungen von Microsoft ungeprüft → Copilot ggf. manuell oder später
+- Kosten je Lauf vor dem Bau schätzen (40 Prompts × 5 Assistenten × wöchentlich)
 
 ### 3 · Mail-Strecken + Signale
 
@@ -91,5 +122,11 @@ der später ins Produkt wandern kann („PageCompliance im Schreibfluss“ für 
 
 ## Design
 
-- Klickbarer HTML-Prototyp, Look wie die PageCompliance-App bzw. Aurora-Design
-- Benötigt: Farben, Schriften, Logo, 2–3 Screenshots der App
+- Klickbarer HTML-Prototyp, Referenz: PageCompliance App v3 + Designsystem „Aurora“ v2
+- Schriften: Helvetica Neue (UI), Space Grotesk (alle Zahlen), JetBrains Mono (Meta, §, Eyebrows)
+- Farben: Blau #1B3AA8 trägt, Orange #F47A2E → #E74F1B nur für die Hauptaktion,
+  Violett #7E1E97 nur für KI-Momente (z. B. „Entwurf erzeugen“)
+- Status: Kritisch #C5203B · Prüfen #B47714 · Konform #0F9D74 (auch für SEO/GEO-Checks)
+- Wiederverwenden aus App v3: Top-Navigation, „Diese Woche“-Raster, Eingabefeld „Text prüfen“,
+  Status-Karten mit Kürzel-Badge
+- Buttons 12–14 px Radius, keine Pills (außer Status-Chips und Segment-Toggles)
