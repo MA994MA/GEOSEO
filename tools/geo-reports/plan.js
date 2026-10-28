@@ -17,7 +17,6 @@ const fn = {
   rechtvital: 'RechtVital, Kanzlei für Lebensmittel- und Werberecht: Werbeprüfung zum Festpreis, abgerufen 27.10.2026. Nicht HWG-spezifisch; Screenshot sichern.',
   olg: 'OLG Köln, Urteil vom 19.06.2020, 6 U 263/19; Rechtskraft dieses Teils nicht geprüft.',
   hwg: 'Gesetzestext auf gesetze-im-internet.de, geprüft am 27.10.2026. Vor Veröffentlichung bleibt die fachliche Durchsicht Pflicht.',
-  omr: 'OMR Reviews: AGB für Software-Anbieter (Basis-Profil kostenlos); OMR und Radyant, „Quellen von LLMs bei Software-Empfehlungen“, Juni 2026. Eigene Studie von OMR, Interessenlage beachten.',
   tmview: 'TMview (EUIPO), Abfrage DE und EU am 27.10.2026. TMview ist kein amtliches Register.',
   brücken: 'Marketing-Schlüssel, Abschnitt 4 „Brücken“; Strategiebericht Pricing, Abschnitt 3.2 (E‑010).',
   kennz: 'Setzungen dieses Plans. Sie leiten sich aus den geplanten Maßnahmen ab, nicht aus einer Prognose.',
@@ -143,7 +142,7 @@ r.p('**Entscheidung E1.** Bei heute null Nennungen in Gemini ist die Freigabe ei
 r.p('**Entscheidung E5.** Die Sperre für GPTBot, ClaudeBot, CCBot und Applebot-Extended stammt aus der bestehenden robots.txt. Sie schützt die Texte davor, Modelle zu trainieren, die dann dieselben Antworten kostenlos geben, und hält den Vorbehalt nach § 44b UrhG aufrecht. Dagegen steht der Engpass: Kaum ein Modell kennt PageCompliance. Was im Training steckt, weiß ein Modell auch ohne Websuche. CCBot wiegt am schwersten, weil Common Crawl breit für Trainingsdatensätze weiterverwendet wird. Öffentlich stehen Marketingtexte, die sich verbreiten sollen; die Prüflogik steht nicht auf der Website, und gewonnen wird laut Leitfaden über den Weg bis zur Freigabe. Empfehlung: freigeben für die öffentlichen Seiten. Zwei Vorbehalte: Der Effekt ist nicht belegt und frühestens mit der nächsten Modellgeneration sichtbar, und gesammelte Daten lassen sich nicht zurückholen.');
 
 r.h2('3.3 Mit einer Stimme sprechen');
-r.p('Jeder Text über PageCompliance trägt dieselbe Definition, wörtlich: Website, llms.txt, LinkedIn, Munich Startup, OMR Reviews, jeder Gastbeitrag.');
+r.p('Jeder Text über PageCompliance trägt dieselbe Definition, wörtlich: Website, llms.txt, LinkedIn, Munich Startup, Crunchbase, jeder Gastbeitrag.');
 r.quote('PageCompliance ist die Plattform für Gesundheitswerbung. Agenturen, Praxen, Heilberufe und Hersteller prüfen ihre Texte KI-gestützt auf Risiken nach Heilmittelwerbegesetz (HWG), Health-Claims-Verordnung und UWG – bekommen für jede kritische Stelle den besseren Satz und geben gemeinsam frei.');
 r.p('Dazu gehören der Kern aus dem Marketing-Schlüssel: Claim „PageCompliance – die Prüfung für Gesundheitswerbung“, Vision „Wahrheit ist die stärkste Werbung“, Mission „Schneller geprüft als geschrieben“, Nutzen „Der bessere Satz, der nach der Marke klingt. Bereit zur Freigabe.“ und der Weg Prüfen, Besser so, Abstimmen, Freigegeben, Planen, Wächter. Was live anders klingt, wird ersetzt:');
 r.table(['Live heute', 'Neu', 'Grund'], [
@@ -217,7 +216,7 @@ r.p('**Entscheidung E3.** Unter allen 14 Artikeln steht „Er stellt keine Recht
 r.h2('3.5 Fremde Stimmen sammeln');
 r.p('Autorität ist der Engpass hinter allem anderen. Sie entsteht nur über echte Erwähnungen. Vier Wege, geordnet nach Aufwand:');
 r.bullets([
-  '**Verzeichnisse (M7, 30 Tage).** Crunchbase einmal anlegen: bringt keine Kunden, aber eine fremde Quelle mit harten Fakten. OMR Reviews nur als Basis-Profil (kostenlos), dazu beide Kunden um eine ehrliche Bewertung bitten; ohne Bewertungen ist das Profil wertlos. Aktiv angehen erst ab etwa fünf echten Bewertungen (eigene Setzung) und nachdem die passende Kategorie geprüft ist. Kein G2: amerikanisch geprägt, für deutsche Gesundheitswerbung ohne erkennbaren Nutzen. Überall die Definition. Bewertungen nur von echten Kunden, nie gekauft. OMR nennt sich selbst die meistzitierte Quelle bei Software-Empfehlungen in DACH; das ist eine eigene Studie mit Eigeninteresse.[^omr]',
+  '**Crunchbase (M7, 30 Tage).** Einmal anlegen, mit Definition und Fakten, nicht pflegen. Bringt keine Kunden, aber eine fremde Quelle mit harten Fakten. OMR Reviews kommt erst, wenn wir größer sind und genug echte Bewertungen sammeln können; ein Profil ohne Bewertungen ist wertlos. G2 entfällt: amerikanisch geprägt, für deutsche Gesundheitswerbung ohne erkennbaren Nutzen.',
   '**Partner-Agenturen (M9, Idee).** envyo, get-luna, buntdigital, pixelrobots, huchel-medienagentur, adfera besetzen die Ratgeber-Suchen und verkaufen Websites, keine Prüfung. Angebot: Gastbeitrag, Tool-Erwähnung, Partnerschaft. Sie sind zugleich Tür 1. Eine Partner-Agentur bringt Link, Zielgruppe und über den Empfehlungsweg Praxen mit 15 % Gutschrift. Nicht smugo: smugo bietet Agenturen selbst einen HWG-Dienst als White-Label-Partnerschaft an.',
   '**LinkedIn (M11, laufend).** Jede neue Seite ein Beitrag. Die Serie aus dem Marketing-Schlüssel passt genau: „Ein Satz, drei Fassungen“, ein echter Satz aus dem Gesundheitsmarketing, der Befund, der bessere Satz, Ende „Bereit zur Freigabe“. Firmenseite in Sie, Massis Profil in Du.',
   '**Heilberufe direkt (laufend).** Fachverbände, Fachschulen und Instagram, wie im Fahrplan für Heilpraktiker vorgesehen.',
@@ -245,7 +244,7 @@ r.table(['#', 'Wann', 'Aufgabe', 'Fertig, wenn'], [
   ['M4', 'sofort', 'Vorher-Nachher-Artikel um BGH I ZR 170/24 korrigieren, mit Link zur Quelle', 'Kurzantwort und Text nennen Unterspritzungen'],
   ['M5', '30 Tage', 'Vorfilter-Artikel neu schreiben, etwa „Was eine Prüfung für Gesundheitswerbung leistet und wo die Kanzlei übernimmt“', 'kein „Vorfilter“, kein „KEINE PRÜFUNG“'],
   ['M6', '30 Tage', 'Immunsystem-Artikel zusammenführen unter /blog/nem-immunsystem-claims-erlaubt', 'ein Artikel mit Wortlaut der zugelassenen Claims'],
-  ['M7', '30 Tage', 'Crunchbase einmal anlegen; OMR-Basis-Profil anlegen und beide Kunden um Bewertung bitten; kein G2', 'zwei Profile mit Definition; zwei Bewertungen angefragt'],
+  ['M7', '30 Tage', 'Crunchbase einmal anlegen; OMR erst, wenn wir größer sind; kein G2', 'Crunchbase-Profil mit Definition ist live'],
   ['M8', '30 Tage', 'neue Artikel 1 bis 4 nach dem Muster', 'je Artikel Schritte 1 bis 3 erledigt'],
   ['M9', '30 Tage', 'Idee: sechs Partner-Agenturen ansprechen', 'mindestens zwei Zusagen für Gastbeitrag oder Erwähnung'],
   ['M11', 'laufend', 'jeder Artikel ein LinkedIn-Beitrag', 'Beitrag binnen 14 Tagen nach Veröffentlichung'],
@@ -259,7 +258,7 @@ r.h2('4.2 Aufgaben Leon: Technik');
 r.p('Die vollständige Liste mit Code, Textvorschlägen und „Fertig, wenn“ steht im Blatt „Was Leon tun soll“. Kurzfassung:');
 r.table(['Wann', 'Aufgaben', 'Aufwand'], [
   ['sofort', 'L17 Preisseite bereinigen · L1 robots.txt (nach E1 und E5) · L2 noindex /login, /register · L3 Titles, Meta-Description, H1 · L4 Blog-Fußzeile (nach E3) · L5 llms.txt · L6 Sitemap · L7 Search Console, Bing, IndexNow', 'etwa 5 Stunden plus Preisseite'],
-  ['30 Tage', 'L8 Firmen-Markup · L9 Suchbegriff unter der H1 · L10 /ueber-uns · L11 Blog-Vorlage (Stand, Autor, Aktenzeichen, Links) · L12 Weiterleitungen · L13 Messung in Plausible? · L14 Preis-Markup (nach E2)', 'etwa 4 Tage'],
+  ['30 Tage', 'L8 Firmen-Markup · L9 Suchbegriff unter der H1 · L10 /ueber-uns · L11 Blog-Vorlage (Stand, Autor, Aktenzeichen, Links) · L12 Weiterleitungen · L13 Messung (Plausible?, markierte Kampagnen-Links) · L14 Preis-Markup (nach E2)', 'etwa 4 Tage'],
   ['90 Tage', 'L15 Produktseiten je Tür · L16 Vergleichsseite', 'etwa 5 Tage'],
 ], [12, 70, 18]);
 
@@ -279,7 +278,7 @@ r.table(['Offener Punkt', 'Benötigte Information', 'Wer', 'Wofür'], [
   ['Heilpraktiker-Kernsatz', '„liest ab jetzt jemand mit“ klingt nach einem Menschen, der mitliest; Alternative „liest ab jetzt PageCompliance mit“ prüfen', 'Massi', 'Seite /heilberufe, Kampagne'],
   ['Abmahnschutz-Formulierungen', 'anwaltliche Durchsicht der Muster', 'Massi mit Anwältin (M14)', 'Artikel, Anzeigen'],
   ['Marken „Wächter“ und „PageCompliance“', 'Prüfung durch eine Markenrechtlerin', 'Leon', 'App-Name, Start'],
-  ['Messwerkzeug', 'Plausible beibehalten oder ein anderes Werkzeug für L13?', 'Leon', 'Messung der Anmeldungen'],
+  ['Messwerkzeug', 'Plausible beibehalten oder ein anderes Werkzeug für L13? Empfehlung: behalten (Daten seit Juni, kein Cookie-Banner nötig laut Anbieter), Kampagnen-Links markieren', 'Leon', 'Messung der Anmeldungen'],
   ['Ton für approbierte Psychotherapeuten', 'getrennt von Heilpraktikern festlegen', 'Massi', 'Artikel Heilpraktiker für Psychotherapie'],
 ], [24, 38, 18, 20], { size: 15 });
 
@@ -288,9 +287,9 @@ r.p('Fünf Kennzahlen zeigen, ob der Plan wirkt. Die Zielwerte nach 90 Tagen sin
 r.table(['Kennzahl', 'Ausgang 26.10.', 'Ziel nach 90 Tagen', 'Woraus das Ziel folgt'], [
   ['Gemini beantwortet „Was ist PageCompliance?“ richtig', 'nein: Gattungsbegriff, FinTech', 'ja, mit Heilmittelwerbegesetz', 'E1, Definition, Munich Startup, Über uns'],
   ['Nennungen im Fragen-Panel', 'ChatGPT 3, Perplexity 4, Gemini 0 von 15', 'in jedem System mehr als heute, Gemini mindestens 1', 'neue Artikel auf die Fragen 3, 6, 8, 9'],
-  ['Fremde Quellen über PageCompliance', '2', 'mindestens 5', 'Crunchbase, OMR und mindestens eine Fundstelle bei einem Verband, einer Fachschule oder einer Agentur'],
+  ['Fremde Quellen über PageCompliance', '2', 'mindestens 4', 'LinkedIn und Munich Startup korrigiert, Crunchbase, mindestens eine Fundstelle bei einem Verband, einer Fachschule oder einer Agentur'],
   ['Neue Artikel 1 bis 4 in den Top 10 ihrer Frage', '–', 'mindestens 2 von 4', 'Muster wie bei den beiden Platz-1-Artikeln'],
-  ['Anmeldungen außerhalb des Netzwerks', 'rund 1,6 im Monat', 'mit Herkunft messen; Richtwert aus dem Pricing: rund 12 im Monat', 'Pricing 2.1; Plausible und Anmeldefeld (L13)'],
+  ['Anmeldungen außerhalb des Netzwerks', 'rund 1,6 im Monat', 'mit Herkunft messen; Richtwert aus dem Pricing: rund 12 im Monat', 'Pricing 2.1; Plausible, markierte Kampagnen-Links und Anmeldefeld (L13)'],
 ], [26, 20, 24, 30], { size: 15 });
 r.p('Nach der Messung bekommt jede Seite eine von vier Entscheidungen: halten, verlinken, umschreiben, aufgeben. Ein Durchlauf ist ein Schnappschuss; erst drei Messungen zeigen einen Trend.');
 
@@ -300,7 +299,7 @@ r.table(['Schritt', 'Abgeschlossen, wenn'], [
   ['2 Sofort-Paket bauen (L1 bis L7) und Preisseite bereinigen (L17)', 'robots.txt, noindex, Titles und llms.txt sind live; keine unbelegte Zahl steht mehr auf der Website'],
   ['3 Eine Stimme herstellen (M2, M3, M12, L8 bis L10)', 'Website, LinkedIn und Munich Startup tragen die Definition wörtlich; /ueber-uns hat den Faktenblock'],
   ['4 Bestand reparieren (M4, M5, M6, L11, L12)', 'Vorher-Nachher korrigiert; Vorfilter neu; Immunsystem zusammengeführt; Vorlage mit Stand, Autor, Links'],
-  ['5 Erste neue Artikel und Stimmen (M7 bis M9, M11)', 'Artikel 1 und 2 sind live, je mit LinkedIn-Beitrag; Crunchbase und OMR angelegt; falls M9 umgesetzt wird, sechs Agenturen angefragt'],
+  ['5 Erste neue Artikel und Stimmen (M7 bis M9, M11)', 'Artikel 1 und 2 sind live, je mit LinkedIn-Beitrag; Crunchbase angelegt; falls M9 umgesetzt wird, sechs Agenturen angefragt'],
   ['6 Erste Messung (M13 verkürzt)', 'Fragen-Panel und Search Console zeigen den Stand vier Wochen nach dem Sofort-Paket'],
 ], [44, 56]);
 
@@ -315,7 +314,7 @@ r.table(['Maßnahme', 'Inhalt', 'Beruht auf Befund', 'Quelle'], [
   ['M5, M6, L12', 'Vorfilter neu, Immunsystem zusammenführen', 'Widerspruch zum Claim; doppelte Seiten (Audit Anhang B)', 'Roh-HTML 27.10.'],
   ['M8, L11', 'neue Artikel im festen Format', 'Gewinn nur in dünn besetzten Fragen (Audit 2.4)', 'Weitere Fragen, Autocomplete'],
   ['L15', 'Produktseiten je Tür', '0 von 8 Werkzeug-Suchen (Audit 2.4); vier Türen', 'Marketing-Schlüssel 2'],
-  ['M7, M9, M11', 'Verzeichnisse, Partner, LinkedIn', 'nur zwei fremde Stimmen (Audit 2.6)', 'Google KI-Leitfaden; OMR'],
+  ['M7, M9, M11', 'Verzeichnisse, Partner, LinkedIn', 'nur zwei fremde Stimmen (Audit 2.6)', 'Google KI-Leitfaden'],
   ['M10, L16', 'Vergleichsseite nach Kategorien', 'Kategorie frei (Audit 2.7)', '§ 6 UWG; Leitfaden 5.3'],
   ['E3, L4', 'Hinweiszeile im Blog', 'Widerspruch zum Leitfaden', 'Leitfaden 2.4'],
   ['E4', 'Laufende Website-Prüfung', 'smugo „HWG-Wächter“; Wächter-Marken', 'TMview 27.10.'],
@@ -370,7 +369,7 @@ r.table(['Kurzname', 'Inhalt', 'Ablage oder Link'], [
   ['Rechtsprechung', 'BGH I ZR 170/24; OLG Köln 6 U 263/19', 'verbraucherzentrale.nrw (Urteil BGH) · iww.de/mk/quellenmaterial/id/218138'],
   ['Marktpreise', 'RechtVital Festpreise; Händlerbund Health Claims Check', 'recht-vital.de/werbung-pruefung-zum-festpreis · haendlerbund.de/de/ratgeber/recht/3881-heilmittelwerbegesetz'],
   ['Wettbewerb', 'smugo, Caidera, Dr. Kaske, AppCore, leema, eckada, dripback', 'Links im Audit, Quellen'],
-  ['Verzeichnisse', 'Munich Startup; OMR Reviews AGB und Studie', 'munich-startup.de/startups/pagecompliance · omr.com/de/reviews/vendor/agb'],
+  ['Verzeichnisse', 'Munich Startup; Crunchbase', 'munich-startup.de/startups/pagecompliance · support.crunchbase.com'],
   ['TMview', 'Markensuche DE und EU', 'tmdn.org/tmview'],
 ], [20, 38, 42], { size: 15 });
 

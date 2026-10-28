@@ -59,8 +59,8 @@ folie(5, 'Was du machst', '2 Minuten',
   'Technik und Preise. Sofort etwa 5 Stunden, dann etwa 4 Tage, dann etwa 5 Tage.',
   [
     '**Sofort:** Gemini und die anderen KI-Crawler hereinlassen. Die Login-Seite aus der Google-Suche nehmen. Titel und Texte im Kopf der Seiten bereinigen. Und die Preisseite: Alle Zahlen raus, die wir nicht belegen können. Für einen Prüf-Anbieter sind die ein echtes Risiko.',
-    '**In 30 Tagen:** Google sagen, wer wir sind, also Firma, Sitz, Gründer. Die Seite „Über uns“ einbauen. Die Blog-Vorlage verbessern. Und messen, woher jede Anmeldung kommt.',
-    '**In 90 Tagen:** eine Seite pro Zielgruppe und eine Vergleichsseite.',
+    '**In 30 Tagen:** Google sagen, wer wir sind, also Firma, Sitz, Gründer. Die Seite „Über uns“ einbauen. Die Blog-Vorlage verbessern. Und messen, woher jede Anmeldung kommt. Dafür bekommen die Links in unseren Kampagnen eine Markierung, dann sehen wir, welche Kampagne wirkt.',
+    '**In 90 Tagen:** eine Seite pro Zielgruppe: Agenturen, Arztpraxen, Heilberufe, Hersteller, dazu die „Laufende Website-Prüfung“. Und eine Vergleichsseite. Extra-Seiten für Suchbegriffe wie „HWG-Prüfung“ bauen wir erst, wenn die Messung zeigt, dass sie fehlen. Sonst konkurrieren sie mit der Startseite.',
     'Alles steht mit Erklärung in deinem Blatt.',
   ]);
 
@@ -68,7 +68,7 @@ folie(6, 'Was ich mache', '1,5 Minuten',
   'Eine Stimme, richtige Inhalte, andere sprechen über uns.',
   [
     '**Sofort:** LinkedIn und Munich Startup auf unsere Beschreibung umstellen. Dort steht noch FinTech, deshalb hält Gemini uns dafür. Den Text für „Über uns“ schreiben. Einen Fehler im Vorher-Nachher-Artikel korrigieren.',
-    '**In 30 Tagen:** Texte für die Startseite, vier neue Artikel, jeder mit LinkedIn-Beitrag. Profile bei Crunchbase und OMR.',
+    '**In 30 Tagen:** Texte für die Startseite, vier neue Artikel, jeder mit LinkedIn-Beitrag. Ein Profil bei Crunchbase. OMR kommt später, wenn wir mehr Kunden haben, die uns bewerten können.',
     '**Idee:** Agenturen, die über das Thema schreiben, als Partner gewinnen.',
   ]);
 
@@ -80,11 +80,11 @@ folie(7, 'Was wir heute entscheiden', '2,5 Minuten',
     '**3. Den Satz „keine Rechtsberatung“ unter den Artikeln?** Ersetzen durch: „Den Einzelfall bewertet Ihre Kanzlei.“',
     '**4. Name für den Wächter auf der Website?** „Laufende Website-Prüfung“. In der App bleibt es „Wächter“.',
     '**5. Die KI-Modelle mit unseren Texten lernen lassen?** Ja. Dann kennen sie uns auch ohne Websuche. Ob das wirkt, ist allerdings nicht sicher.',
-    'Offen bei dir: Bleiben wir bei Plausible, brauchen wir eine Markenrechtlerin, und wann sprichst du mit den Praxen und tigovit über die Preise?',
+    'Offen bei dir: Bleiben wir bei Plausible? Mein Vorschlag: ja, mit markierten Kampagnen-Links. Brauchen wir eine Markenrechtlerin, und wann sprichst du mit den Praxen und tigovit über die Preise?',
   ]);
 
 folie(8, 'Was es bringt und wie es weitergeht', '1 Minute',
-  'In 90 Tagen: Gemini kennt uns, mindestens 5 fremde Quellen statt 2, neue Artikel in den Top 10.',
+  'In 90 Tagen: Gemini kennt uns, mindestens 4 fremde Quellen statt 2, neue Artikel in den Top 10.',
   [
     'Es kostet vor allem unsere Zeit, kaum Geld. Nach vier Wochen messen wir mit denselben Fragen nach. Was nicht wirkt, ändern wir.',
     'Wenn wir heute entscheiden, kannst du morgen anfangen. Und die erste Kampagne an Agenturen landet dann schon auf der neuen Website.',

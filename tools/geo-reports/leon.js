@@ -79,7 +79,7 @@ task('L7', 'Search Console, Bing Webmaster Tools und IndexNow einrichten', [
 
 r.h1('3 In 30 Tagen (etwa 4 Tage)');
 task('L8', 'Firmen-Markup auf Startseite und /ueber-uns',
-  'Ein Organization-Block als JSON-LD. Logo-Pfad und LinkedIn-Adresse anpassen; weitere Profile (Crunchbase, OMR) in `sameAs` ergänzen, sobald Massi sie angelegt hat (M7).',
+  'Ein Organization-Block als JSON-LD. Logo-Pfad und LinkedIn-Adresse anpassen; das Crunchbase-Profil in `sameAs` ergänzen, sobald Massi sie angelegt hat (M7).',
   'Google erkennt die Marke heute nicht als Firma, und Gemini holt die Fakten aus Creditreform. Das Markup sagt maschinenlesbar, wer wir sind.',
   'der Rich-Results-Test von Google liest den Block ohne Fehler.',
   ['{', '  "@context": "https://schema.org",', '  "@type": "Organization",', '  "name": "PageCompliance",',
@@ -105,9 +105,11 @@ task('L12', 'Weiterleitungen (301) setzen', [
   '`/blog/immunsystem-staerken-health-claim-erlaubt` → `/blog/nem-immunsystem-claims-erlaubt` (M6).',
 ], 'Zwei Seiten zur selben Frage konkurrieren gegeneinander. Die Weiterleitung bündelt sie, und alte Links bleiben gültig.',
   'die alten Adressen antworten mit 301 auf das neue Ziel.');
-task('L13', 'Messung in Plausible?',
+task('L13', 'Messung in Plausible?', [
   'Besuche aus KI-Systemen als eigene Gruppe sichtbar machen (chatgpt.com, perplexity.ai, gemini.google.com, copilot.microsoft.com). Das Ziel „Anmeldung“ mit Herkunft erfassen. Bei der Anmeldung ein freiwilliges Feld „Wie haben Sie uns gefunden?“ mit der Option „ChatGPT oder anderer KI-Assistent“.',
-  'Nur so sehen wir, ob GEO Anmeldungen bringt. Das ist die Kennzahl, um die es im Pricing geht: heute rund 1,6 Anmeldungen von außen im Monat.',
+  'Kampagnen-Links markieren: Jeder Link in einem LinkedIn- oder Instagram-Beitrag bekommt einen Zusatz wie `?utm_source=linkedin&utm_campaign=hp-satz`. Dann zeigt Plausible, aus welcher Kampagne ein Klick kam.',
+  'Empfehlung zum Fragezeichen: bei Plausible bleiben. Daten seit Juni, laut Anbieter kein Cookie-Banner nötig. Grenze: Plausible zählt nur den letzten Kontakt; wer erst später googelt, zählt als Google. Das fängt das Anmeldefeld auf.',
+], 'Nur so sehen wir, ob GEO Anmeldungen bringt. Das ist die Kennzahl, um die es im Pricing geht: heute rund 1,6 Anmeldungen von außen im Monat.',
   'die erste Anmeldung mit Herkunft ist in Plausible sichtbar.');
 task('L14', 'Preis-Markup (erst nach E2, wenn Preise v2 live ist)',
   'Zuerst nur für die entschiedenen Pakete: Gratis, Agentur 99 €, Team 249 €. Praxis und Hersteller folgen, wenn du die Preise nach den Gesprächen festgelegt hast.',
