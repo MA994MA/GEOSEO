@@ -206,18 +206,18 @@ r.p('Auf den acht Werkzeug-Suchen rankt heute keine Produktseite; Wettbewerber t
 r.table(['Seite', 'Kernsatz', 'Wow-Moment (App v3)', 'Paket'], [
   ['/agenturen (besteht, auf „Sie“ umstellen)', '„Ihr Kunde fragt nicht mehr, ob er das so schreiben darf.“', 'Befund, besserer Satz, „An … senden“, Kunde tippt am Handy auf „Passt“', 'Agentur 99 €, Team 249 €'],
   ['/arztpraxen', '„Ihr ganzer Auftritt auf einer Fläche. Und was davon zu tun ist.“', '„Mein Auftritt“; ein Bild ist eine Stelle wie ein Satz', 'Praxis 29 €, Einzel-Audit 149 €'],
-  ['/heilpraktiker', '„Ihre Botschaft bleibt erhalten.“', 'Sperrsätze aus der Unterlassungserklärung', 'Praxis 29 €'],
-  ['/hersteller', '„Etikett rein. Text raus. Ruhe.“', 'Rezeptur-Werkstatt: eine Kapsel mehr, ein Claim kommt dazu', 'Hersteller 99 €'],
+  ['/heilberufe', '„Ihre Botschaft bleibt erhalten.“', 'Sperrsätze aus der Unterlassungserklärung', 'Praxis 29 €'],
+  ['/hersteller („Nahrungsergänzungsmittel“ in Title und H1)', '„Etikett rein. Text raus. Ruhe.“', 'Rezeptur-Werkstatt: eine Kapsel mehr, ein Claim kommt dazu', 'Hersteller 99 €'],
   ['/laufende-website-pruefung', '„Ruhe als Leistung.“', 'Prüfbericht „Ihre Website war im Oktober ohne Befund.“', 'in Praxis, Agentur, Hersteller; Zeitform „kommt“'],
 ], [22, 30, 30, 18], { size: 15 });
-r.p('Ärzte und Heilpraktiker bekommen getrennte Seiten, obwohl dasselbe Paket dahinterliegt: Ärzte wollen nicht mit Heilpraktikern in einen Topf, und der Schmerz ist ein anderer. Preise auf diesen Seiten erst nach E2; Praxis 29 € und Hersteller 99 € sind Arbeitswerte.');
-r.p('Suchanlässe für die Seite „Laufende Website-Prüfung“, abgeleitet aus Plan v1, Suchvolumen nicht gemessen: „Website laufend prüfen Heilmittelwerbegesetz“, „Praxis-Website überwachen Werbung“, „Kunden-Websites überwachen Agentur Gesundheit“, „Unterlassungserklärung Vertragsstrafe vermeiden Website“ (Heilberufe). Vor dem Schreiben in Search Console oder Keyword-Planer prüfen. Offen bleibt, ob zusätzlich Seiten für Kaufbegriffe wie /hwg-pruefung und /health-claims-pruefung kommen (Vorschlag der Strategie im Repo); das entscheidet die erste Messung, weil Google vor vervielfachten Seiten warnt.');
+r.p('Ärzte und Heilberufe bekommen getrennte Seiten, obwohl dasselbe Paket dahinterliegt: Ärzte wollen nicht mit Heilpraktikern in einen Topf, und der Schmerz ist ein anderer. /heilberufe statt /heilpraktiker, weil Tür 3 laut Leitfaden auch Physiotherapie, Osteopathie und Psychotherapeuten umfasst. /hersteller statt /nahrungsergaenzungsmittel, weil OTC- und RX-Hersteller später dazukommen. Preise auf diesen Seiten erst nach E2; Praxis 29 € und Hersteller 99 € sind Arbeitswerte.');
+r.p('Suchanlässe für die Seite „Laufende Website-Prüfung“, abgeleitet aus Plan v1, Suchvolumen nicht gemessen: „Website laufend prüfen Heilmittelwerbegesetz“, „Praxis-Website überwachen Werbung“, „Kunden-Websites überwachen Agentur Gesundheit“, „Unterlassungserklärung Vertragsstrafe vermeiden Website“ (Heilberufe). Vor dem Schreiben in Search Console oder Keyword-Planer prüfen. Keine zusätzlichen Seiten für Kaufbegriffe (Vorschlag der Strategie: /hwg-pruefung, /health-claims-pruefung). Sie würden mit vorhandenen Seiten um dieselben Suchbegriffe konkurrieren: Die Startseite übernimmt „Prüfung nach Heilmittelwerbegesetz“, die Hersteller-Seite „Health Claims prüfen“. Erst wenn die Search Console nach der ersten Messung viele Einblendungen für solche Begriffe ohne passende Seite zeigt, wird nachgebaut.');
 r.p('**Entscheidung E3.** Unter allen 14 Artikeln steht „Er stellt keine Rechtsberatung dar“. Der Leitfaden sieht die Formel nur in den AGB vor, nicht im Marketing. Vorschlag ohne die Formel: „Dieser Artikel zeigt typische Risikostellen. Den Einzelfall bewertet Ihre Kanzlei.“ Entscheidung bei Leon und Massi.');
 
 r.h2('3.5 Fremde Stimmen sammeln');
 r.p('Autorität ist der Engpass hinter allem anderen. Sie entsteht nur über echte Erwähnungen. Vier Wege, geordnet nach Aufwand:');
 r.bullets([
-  '**Verzeichnisse (M7, 30 Tage).** OMR Reviews (Basis-Profil kostenlos), Crunchbase, G2. Überall die Definition. Bewertungen nur von echten Kunden, nie gekauft. OMR nennt sich selbst die meistzitierte Quelle bei Software-Empfehlungen in DACH; das ist eine eigene Studie mit Eigeninteresse.[^omr]',
+  '**Verzeichnisse (M7, 30 Tage).** Crunchbase einmal anlegen: bringt keine Kunden, aber eine fremde Quelle mit harten Fakten. OMR Reviews nur als Basis-Profil (kostenlos), dazu beide Kunden um eine ehrliche Bewertung bitten; ohne Bewertungen ist das Profil wertlos. Aktiv angehen erst ab etwa fünf echten Bewertungen (eigene Setzung) und nachdem die passende Kategorie geprüft ist. Kein G2: amerikanisch geprägt, für deutsche Gesundheitswerbung ohne erkennbaren Nutzen. Überall die Definition. Bewertungen nur von echten Kunden, nie gekauft. OMR nennt sich selbst die meistzitierte Quelle bei Software-Empfehlungen in DACH; das ist eine eigene Studie mit Eigeninteresse.[^omr]',
   '**Partner-Agenturen (M9, Idee).** envyo, get-luna, buntdigital, pixelrobots, huchel-medienagentur, adfera besetzen die Ratgeber-Suchen und verkaufen Websites, keine Prüfung. Angebot: Gastbeitrag, Tool-Erwähnung, Partnerschaft. Sie sind zugleich Tür 1. Eine Partner-Agentur bringt Link, Zielgruppe und über den Empfehlungsweg Praxen mit 15 % Gutschrift. Nicht smugo: smugo bietet Agenturen selbst einen HWG-Dienst als White-Label-Partnerschaft an.',
   '**LinkedIn (M11, laufend).** Jede neue Seite ein Beitrag. Die Serie aus dem Marketing-Schlüssel passt genau: „Ein Satz, drei Fassungen“, ein echter Satz aus dem Gesundheitsmarketing, der Befund, der bessere Satz, Ende „Bereit zur Freigabe“. Firmenseite in Sie, Massis Profil in Du.',
   '**Heilberufe direkt (laufend).** Fachverbände, Fachschulen und Instagram, wie im Fahrplan für Heilpraktiker vorgesehen.',
@@ -245,7 +245,7 @@ r.table(['#', 'Wann', 'Aufgabe', 'Fertig, wenn'], [
   ['M4', 'sofort', 'Vorher-Nachher-Artikel um BGH I ZR 170/24 korrigieren, mit Link zur Quelle', 'Kurzantwort und Text nennen Unterspritzungen'],
   ['M5', '30 Tage', 'Vorfilter-Artikel neu schreiben, etwa „Was eine Prüfung für Gesundheitswerbung leistet und wo die Kanzlei übernimmt“', 'kein „Vorfilter“, kein „KEINE PRÜFUNG“'],
   ['M6', '30 Tage', 'Immunsystem-Artikel zusammenführen unter /blog/nem-immunsystem-claims-erlaubt', 'ein Artikel mit Wortlaut der zugelassenen Claims'],
-  ['M7', '30 Tage', 'OMR Reviews, Crunchbase, G2 anlegen', 'drei Profile mit Definition'],
+  ['M7', '30 Tage', 'Crunchbase einmal anlegen; OMR-Basis-Profil anlegen und beide Kunden um Bewertung bitten; kein G2', 'zwei Profile mit Definition; zwei Bewertungen angefragt'],
   ['M8', '30 Tage', 'neue Artikel 1 bis 4 nach dem Muster', 'je Artikel Schritte 1 bis 3 erledigt'],
   ['M9', '30 Tage', 'Idee: sechs Partner-Agenturen ansprechen', 'mindestens zwei Zusagen für Gastbeitrag oder Erwähnung'],
   ['M11', 'laufend', 'jeder Artikel ein LinkedIn-Beitrag', 'Beitrag binnen 14 Tagen nach Veröffentlichung'],
@@ -276,7 +276,7 @@ r.h2('4.4 Offene Punkte');
 r.table(['Offener Punkt', 'Benötigte Information', 'Wer', 'Wofür'], [
   ['Preise für Praxis und Hersteller', 'Gespräche mit mindestens drei Praxen und tigovit nach dem Leitfaden', 'Leon', 'Preis-Markup, Produktseiten, Artikel 2'],
   ['Quelle „Anwalt ab 399 €“', 'öffentliche Fundstelle aus Recherche O2 mit Screenshot ablegen', 'Leon', 'Preisanker auf der Preisseite'],
-  ['Heilpraktiker-Kernsatz', '„liest ab jetzt jemand mit“ klingt nach einem Menschen, der mitliest; Alternative „liest ab jetzt PageCompliance mit“ prüfen', 'Massi', 'Seite /heilpraktiker, Kampagne'],
+  ['Heilpraktiker-Kernsatz', '„liest ab jetzt jemand mit“ klingt nach einem Menschen, der mitliest; Alternative „liest ab jetzt PageCompliance mit“ prüfen', 'Massi', 'Seite /heilberufe, Kampagne'],
   ['Abmahnschutz-Formulierungen', 'anwaltliche Durchsicht der Muster', 'Massi mit Anwältin (M14)', 'Artikel, Anzeigen'],
   ['Marken „Wächter“ und „PageCompliance“', 'Prüfung durch eine Markenrechtlerin', 'Leon', 'App-Name, Start'],
   ['Messwerkzeug', 'Plausible beibehalten oder ein anderes Werkzeug für L13?', 'Leon', 'Messung der Anmeldungen'],
@@ -288,7 +288,7 @@ r.p('Fünf Kennzahlen zeigen, ob der Plan wirkt. Die Zielwerte nach 90 Tagen sin
 r.table(['Kennzahl', 'Ausgang 26.10.', 'Ziel nach 90 Tagen', 'Woraus das Ziel folgt'], [
   ['Gemini beantwortet „Was ist PageCompliance?“ richtig', 'nein: Gattungsbegriff, FinTech', 'ja, mit Heilmittelwerbegesetz', 'E1, Definition, Munich Startup, Über uns'],
   ['Nennungen im Fragen-Panel', 'ChatGPT 3, Perplexity 4, Gemini 0 von 15', 'in jedem System mehr als heute, Gemini mindestens 1', 'neue Artikel auf die Fragen 3, 6, 8, 9'],
-  ['Fremde Quellen über PageCompliance', '2', 'mindestens 5, mit M9 mindestens 7', '3 Verzeichnisse; mit M9 mindestens 2 Gastbeiträge'],
+  ['Fremde Quellen über PageCompliance', '2', 'mindestens 5', 'Crunchbase, OMR und mindestens eine Fundstelle bei einem Verband, einer Fachschule oder einer Agentur'],
   ['Neue Artikel 1 bis 4 in den Top 10 ihrer Frage', '–', 'mindestens 2 von 4', 'Muster wie bei den beiden Platz-1-Artikeln'],
   ['Anmeldungen außerhalb des Netzwerks', 'rund 1,6 im Monat', 'mit Herkunft messen; Richtwert aus dem Pricing: rund 12 im Monat', 'Pricing 2.1; Plausible und Anmeldefeld (L13)'],
 ], [26, 20, 24, 30], { size: 15 });
@@ -300,7 +300,7 @@ r.table(['Schritt', 'Abgeschlossen, wenn'], [
   ['2 Sofort-Paket bauen (L1 bis L7) und Preisseite bereinigen (L17)', 'robots.txt, noindex, Titles und llms.txt sind live; keine unbelegte Zahl steht mehr auf der Website'],
   ['3 Eine Stimme herstellen (M2, M3, M12, L8 bis L10)', 'Website, LinkedIn und Munich Startup tragen die Definition wörtlich; /ueber-uns hat den Faktenblock'],
   ['4 Bestand reparieren (M4, M5, M6, L11, L12)', 'Vorher-Nachher korrigiert; Vorfilter neu; Immunsystem zusammengeführt; Vorlage mit Stand, Autor, Links'],
-  ['5 Erste neue Artikel und Stimmen (M7 bis M9, M11)', 'Artikel 1 und 2 sind live, je mit LinkedIn-Beitrag; drei Verzeichnisse angelegt; falls M9 umgesetzt wird, sechs Agenturen angefragt'],
+  ['5 Erste neue Artikel und Stimmen (M7 bis M9, M11)', 'Artikel 1 und 2 sind live, je mit LinkedIn-Beitrag; Crunchbase und OMR angelegt; falls M9 umgesetzt wird, sechs Agenturen angefragt'],
   ['6 Erste Messung (M13 verkürzt)', 'Fragen-Panel und Search Console zeigen den Stand vier Wochen nach dem Sofort-Paket'],
 ], [44, 56]);
 

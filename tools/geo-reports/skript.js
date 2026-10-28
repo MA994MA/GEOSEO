@@ -68,7 +68,7 @@ folie(6, 'Was ich mache', '1,5 Minuten',
   'Eine Stimme, richtige Inhalte, andere sprechen über uns.',
   [
     '**Sofort:** LinkedIn und Munich Startup auf unsere Beschreibung umstellen. Dort steht noch FinTech, deshalb hält Gemini uns dafür. Den Text für „Über uns“ schreiben. Einen Fehler im Vorher-Nachher-Artikel korrigieren.',
-    '**In 30 Tagen:** Texte für die Startseite, vier neue Artikel, jeder mit LinkedIn-Beitrag. Profile bei OMR, Crunchbase und G2.',
+    '**In 30 Tagen:** Texte für die Startseite, vier neue Artikel, jeder mit LinkedIn-Beitrag. Profile bei Crunchbase und OMR.',
     '**Idee:** Agenturen, die über das Thema schreiben, als Partner gewinnen.',
   ]);
 

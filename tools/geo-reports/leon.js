@@ -79,7 +79,7 @@ task('L7', 'Search Console, Bing Webmaster Tools und IndexNow einrichten', [
 
 r.h1('3 In 30 Tagen (etwa 4 Tage)');
 task('L8', 'Firmen-Markup auf Startseite und /ueber-uns',
-  'Ein Organization-Block als JSON-LD. Logo-Pfad und LinkedIn-Adresse anpassen; weitere Profile (OMR, Crunchbase) in `sameAs` ergänzen, sobald Massi sie angelegt hat (M7).',
+  'Ein Organization-Block als JSON-LD. Logo-Pfad und LinkedIn-Adresse anpassen; weitere Profile (Crunchbase, OMR) in `sameAs` ergänzen, sobald Massi sie angelegt hat (M7).',
   'Google erkennt die Marke heute nicht als Firma, und Gemini holt die Fakten aus Creditreform. Das Markup sagt maschinenlesbar, wer wir sind.',
   'der Rich-Results-Test von Google liest den Block ohne Fehler.',
   ['{', '  "@context": "https://schema.org",', '  "@type": "Organization",', '  "name": "PageCompliance",',
@@ -116,9 +116,9 @@ task('L14', 'Preis-Markup (erst nach E2, wenn Preise v2 live ist)',
 
 r.h1('4 In 90 Tagen (etwa 5 Tage)');
 task('L15', 'Produktseiten je Tür', [
-  '`/agenturen` (gibt es schon; von „Ihr“ auf „Sie“ umstellen), `/arztpraxen`, `/heilpraktiker`, `/hersteller`, `/laufende-website-pruefung` (nach E4, Zeitform „kommt“, solange nicht live). Texte von Massi.',
-  'Offen: zusätzlich Seiten für Kaufbegriffe wie `/hwg-pruefung` und `/health-claims-pruefung` (Vorschlag der Strategie im Repo). Erst nach der ersten Messung entscheiden, weil Google vor vervielfachten Seiten warnt.',
-  'Ärzte und Heilpraktiker bekommen getrennte Seiten, obwohl dasselbe Paket dahinterliegt.',
+  '`/agenturen` (gibt es schon; von „Ihr“ auf „Sie“ umstellen), `/arztpraxen`, `/heilberufe`, `/hersteller` („Nahrungsergänzungsmittel“ in Title und H1), `/laufende-website-pruefung` (nach E4, Zeitform „kommt“, solange nicht live). Texte von Massi.',
+  'Keine zusätzlichen Seiten für Kaufbegriffe (Vorschlag der Strategie: `/hwg-pruefung`, `/health-claims-pruefung`). Sie würden mit vorhandenen Seiten um dieselben Suchbegriffe konkurrieren: Die Startseite übernimmt „Prüfung nach Heilmittelwerbegesetz“, die Hersteller-Seite „Health Claims prüfen“. Erst wenn die Search Console nach der ersten Messung viele Einblendungen für solche Begriffe ohne passende Seite zeigt, wird nachgebaut.',
+  'Ärzte und Heilberufe bekommen getrennte Seiten, obwohl dasselbe Paket dahinterliegt. /heilberufe, weil auch Physiotherapie, Osteopathie und Psychotherapeuten dazugehören.',
 ], 'Auf den acht Suchen nach einem Werkzeug rankt heute keine Produktseite. Wettbewerber tragen den Suchbegriff im Namen. Und Ärzte wollen nicht mit Heilpraktikern in einen Topf.',
   'jede Seite ist live, verlinkt aus Startseite und passenden Artikeln, und steht in der Sitemap.');
 task('L16', 'Vergleichsseite',

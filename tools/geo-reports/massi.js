@@ -67,12 +67,14 @@ task('M6', 'Immunsystem-Artikel zusammenführen',
   'Aus zwei Artikeln (445 und 712 Wörter) wird einer unter /blog/nem-immunsystem-claims-erlaubt. Mit dem Wortlaut der zugelassenen Claims und ihren Bedingungen.',
   'Zwei Seiten zur selben Frage konkurrieren gegeneinander.',
   'ein Artikel, der andere leitet weiter (L12).');
-task('M7', 'Verzeichnisse anlegen', [
-  'OMR Reviews (Basis-Profil laut AGB kostenlos), Crunchbase, G2. Überall die Definition wörtlich.',
+task('M7', 'Crunchbase und OMR anlegen', [
+  '**Crunchbase:** einmal anlegen, Definition und Fakten rein, nicht pflegen. Bringt keine Kunden, aber eine fremde Quelle mit harten Fakten.',
+  '**OMR Reviews:** nur das kostenlose Basis-Profil mit Definition und Screenshots. Vorher prüfen, in welcher Kategorie wir landen. Aktiv angehen erst ab etwa fünf echten Bewertungen (eigene Setzung); ein Profil ohne Bewertungen ist wertlos.',
+  '**Kein G2:** amerikanisch geprägt, für deutsche Gesundheitswerbung ohne erkennbaren Nutzen.',
   'Bewertungen nur von echten Kunden, nie gekauft. Naheliegend: die Agenturkundin und die Heilpraktikerin um eine ehrliche Bewertung bitten.',
   'Die Profil-Adressen an Leon geben; er trägt sie ins Firmen-Markup ein (L8).',
 ], 'Außerhalb der eigenen Website gibt es heute nur LinkedIn und Munich Startup. Eine Marke braucht Fundstellen, die nicht ihr selbst gehören. OMR nennt sich die meistzitierte Quelle bei Software-Empfehlungen in DACH; das ist eine eigene Studie mit Eigeninteresse.',
-  'drei Profile mit Definition sind live.');
+  'Crunchbase und OMR sind live, beide Kunden um eine Bewertung gebeten.');
 task('M8', 'Neue Artikel 1 bis 4', [
   'In dieser Reihenfolge: 1 „Sind Heilversprechen strafbar?“ · 2 „Was kostet eine Prüfung nach dem Heilmittelwerbegesetz?“ · 3 „Welche Werbung darf ein Arzt machen?“ · 4 „Für wen gilt das Heilmittelwerbegesetz?“. Belege und geprüfte Rechtsgrundlagen stehen im Maßnahmenplan, Abschnitt 3.4.',
   '**Format jeder Seite:** Kurzantwort in zwei Sätzen, der riskante Satz, Norm und Aktenzeichen, wann es doch geht, drei bessere Sätze, ein Agentur-Hinweis, „Ihren Satz kostenlos prüfen“, Stand-Datum und Autor.',
@@ -111,7 +113,7 @@ r.bullets([
   '**Heilpraktiker-Kernsatz:** „liest ab jetzt jemand mit“ klingt nach einem Menschen, der mitliest. Alternative „liest ab jetzt PageCompliance mit“ prüfen.',
   '**Ton für approbierte Psychotherapeuten** getrennt von Heilpraktikern festlegen, bevor der Artikel „Heilpraktiker für Psychotherapie“ kommt.',
   '**Wörterbuch im Leitfaden nachziehen:** Der Wächter heißt gegenüber Kunden der Agentur jetzt „Laufende Website-Prüfung“ statt „Compliance-Monitoring“; der Monatsbericht heißt „Prüfbericht“.',
-  '**Instagram (optional):** Profil erst in die Website-Fußzeile und ins Firmen-Markup, wenn es regelmäßig bespielt wird. Link im Profil direkt auf die kostenlose Prüfung oder /heilpraktiker. Für GEO zählt es wenig, für Vertrauen schon.',
+  '**Instagram (optional):** Profil erst in die Website-Fußzeile und ins Firmen-Markup, wenn es regelmäßig bespielt wird. Link im Profil direkt auf die kostenlose Prüfung oder /heilberufe. Für GEO zählt es wenig, für Vertrauen schon.',
 ]);
 
 r.h1('6 Was Leon von dir braucht');
@@ -120,7 +122,7 @@ r.table(['Leons Aufgabe', 'braucht von dir', 'Aufgabe'], [
   ['L5', 'Definition (fertig, steht oben)', 'M2'],
   ['L8, L10', 'Faktenblock Über uns; Adressen der Verzeichnis-Profile', 'M3, M7'],
   ['L12', 'neuer Vorfilter-Artikel; zusammengeführter Immunsystem-Artikel', 'M5, M6'],
-  ['L15', 'Texte je Tür: /agenturen, /arztpraxen, /heilpraktiker, /hersteller, /laufende-website-pruefung', 'Texte je Tür'],
+  ['L15', 'Texte je Tür: /agenturen, /arztpraxen, /heilberufe, /hersteller, /laufende-website-pruefung', 'Texte je Tür'],
   ['L16', 'Text der Vergleichsseite', 'M10'],
 ], [18, 62, 20]);
 
