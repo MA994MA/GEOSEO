@@ -1,5 +1,5 @@
 // Shared layout for the GEO reports: mirrors the Strategiebericht Pricing
-// (Georgia body, Avenir Next headings, rule-only tables, footnoted sources).
+// (Helvetica throughout, rule-only tables, footnoted sources).
 const fs = require('fs');
 const path = require('path');
 const D = require('docx');
@@ -8,7 +8,7 @@ const { imageSize } = (() => {
   return { imageSize: (f) => { const b = fs.readFileSync(f); return { w: b.readUInt32BE(16), h: b.readUInt32BE(20) }; } };
 })();
 
-const HEAD = 'Avenir Next', BODY = 'Georgia', MONO = 'Courier New';
+const HEAD = 'Helvetica', BODY = 'Helvetica', MONO = 'Courier New';
 const INK = '1A1A1A', GREY = '6B6B6B', RULE = 'D6D6D6', BLUE = '1B3AA8';
 const PAGE_W = 11906, MARGIN = 1300, CONTENT = PAGE_W - 2 * MARGIN; // 9306 DXA
 

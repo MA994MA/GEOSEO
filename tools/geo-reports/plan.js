@@ -12,7 +12,7 @@ const fn = {
   gai: 'Google Search Central: Leitfaden zur Optimierung für KI-Suche; Google: Liste der gängigen Crawler, Eintrag Google-Extended.',
   faq: 'Google Search Central: FAQPage-Markup, Hinweis zur Einstellung im Mai 2026; Software-App-Markup verlangt Bewertungen für Rich Results.',
   uwg: '§ 5 UWG; maßgeblich ist der Gesamteindruck, ein Hinweis in den AGB heilt das nicht (Sprach-Leitfaden, Regel 2.3).',
-  belegt: 'Sprach-Leitfaden v1.0, Abschnitt 7 „Zahlen“; Strategiebericht Pricing, Abschnitt 2.3 (12 € Weiterberechnung, Fall-Log 001 bis 001d).',
+  belegt: '15 € ist das Rechenbeispiel aus dem Marketing-Schlüssel (Abschnitt 3) für kleine und mittlere Agenturen. Gemessen ist nur ein Datenpunkt: Die befragte kleine Agentur berechnet 12 € je Text weiter (Strategiebericht Pricing, Abschnitt 2.3; Fall-Log 001 bis 001d, n = 1).',
   o2: 'Strategiebericht Pricing, Abschnitt 2.3, Recherche O2 (arbeit/recherche_O2_praxis_referenzpreise.md, Abruf 01.10.2026): „anwaltliche Einmalprüfung einer Website ab 399 €“. Die öffentliche Fundstelle fehlt noch in der Ablage.',
   rechtvital: 'RechtVital, Kanzlei für Lebensmittel- und Werberecht: Werbeprüfung zum Festpreis, abgerufen 27.10.2026. Nicht HWG-spezifisch; Screenshot sichern.',
   olg: 'OLG Köln, Urteil vom 19.06.2020, 6 U 263/19; Rechtskraft dieses Teils nicht geprüft.',
@@ -95,7 +95,7 @@ r.p('Die Befunde stammen aus dem GEO-Audit und seiner Nachprüfung, aus dem Mark
 r.h2('2.1 Zwei Zeilen in der robots.txt kosten eine ganze Plattform');
 r.p('Die robots.txt sperrt Google-Extended und DuckAssistBot. Beide liefern Antworten an Nutzer, nicht nur Trainingsdaten. Gemini nennt PageCompliance deshalb in keiner von 15 Antworten und hält den Namen für einen Gattungsbegriff. Die Korrektur kostet zwei Zeilen; sie ist trotzdem eine Entscheidung, weil Google die Texte dann auch für Training nutzen darf (E1).');
 r.h2('2.2 Was die Website sagt, sagen die KI-Systeme weiter');
-r.p('Live stehen noch „Vorprüfung“, die alten Pakete Starter und Professional, „White-Label“ und Zahlen, die der Leitfaden als unbelegt führt: „Anwalt ab 3.000 €“, „Abmahnung ab 5.000 €“, „15 € je Text“. Perplexity gibt „technische Vorprüfung“ weiter, Gemini über Munich Startup „FinTech“. Für einen Anbieter, der Werbeaussagen prüft, sind unbelegte Zahlen auf der eigenen Preisseite zudem ein Risiko nach § 5 UWG.[^uwg] Startseite v3 und Preise v2 sind im Prototyp fertig; das Problem ist der Abstand zwischen Prototyp und Live-Seite.');
+r.p('Live stehen noch „Vorprüfung“, die alten Pakete Starter und Professional, „White-Label“ Zahlen, die der Leitfaden als unbelegt führt („Anwalt ab 3.000 €“, „Abmahnung ab 5.000 €“), und eine Agentur-Rechnung, die noch mit dem alten Paket Professional rechnet („trägt sich ab dem 24. Text“). Perplexity gibt „technische Vorprüfung“ weiter, Gemini über Munich Startup „FinTech“. Für einen Anbieter, der Werbeaussagen prüft, sind unbelegte Zahlen auf der eigenen Preisseite zudem ein Risiko nach § 5 UWG.[^uwg] Startseite v3 und Preise v2 sind im Prototyp fertig; das Problem ist der Abstand zwischen Prototyp und Live-Seite.');
 r.h2('2.3 Gewonnen wird, wo eine Frage belegt und dünn besetzt ist');
 r.p('Zwei Artikel stehen auf Platz 1, beide zu Fragen, die kaum jemand beantwortet. Wo Kanzleien, Ärzteportale und Behörden schreiben, kommen passgenaue Artikel nicht in die Top 10. Googles „Weitere Fragen“ und das Autocomplete zeigen, welche Fragen belegt sind: „Sind Heilversprechen strafbar?“ (4 von 20 Suchen), „Für wen gilt das Heilmittelwerbegesetz?“ (3), „Welche Werbung darf ein Arzt machen?“ (2). Zu allen drei fehlt ein Artikel. Zwei Grenzen gelten: „HWG“ allein gehört bei Google der Hochschule Ludwigshafen, und gegen Gesetzesportal, BVL und Verbraucherzentrale ist auf reinen Rechtsfragen nicht anzukommen.');
 r.h2('2.4 Google sagt selbst: gute Seiten und echte Erwähnungen, keine Tricks');
@@ -148,7 +148,7 @@ r.table(['Live heute', 'Neu', 'Grund'], [
   ['Starter 99 €, Professional 349 €, Enterprise 699 €', 'Gratis, Praxis, Hersteller, Agentur, Team, Enterprise (nach E2)', 'Pricing E‑008, E‑012, E‑014'],
   ['„Anwalt ab 3.000 €“', '„Anwaltliche Einzelprüfung ab 399 €“ mit abgelegter Quelle[^o2] oder 400 € netto je Internetseite bis 550 Wörter[^rechtvital]', '3.000 € ist unbelegt'],
   ['„Abmahnung ab 5.000 €“, „Vertragsstrafe 5.500 €“', 'raus; Vertragsstrafe nur mit Quelle am konkreten Fall', 'unbelegt laut Leitfaden'],
-  ['„15 € je Text“, „trägt sich ab dem 24. Text“', '„Bei 12 € Weiterberechnung trägt sich das Agentur-Paket ab dem 9. Text“ (erst mit Preise v2)', '12 € ist gemessen[^belegt]'],
+  ['„15 € je Text“, „trägt sich ab dem 24. Text“', 'Rechenbeispiel bleibt, klar als Beispiel: „Wenn Sie 15 € je Text weiterberechnen, trägt sich das Agentur-Paket ab dem 7. Text.“ (mit Preise v2)', 'Pitch-Beispiel, kein Messwert; den Preis legt jede Agentur selbst fest[^belegt]'],
   ['„1.000 geprüfte Texte“', 'raus; belegt ist „11 bis 53 Sekunden je Text, 54 Texte in 3 min 17 s“', 'unbelegt'],
   ['„Für jede Regel ein Spezialist“, „12 Paragrafen“', 'Spezialisten als endloser Strom zeigen, ohne Zahl', 'keine nachzählbaren Prüfer-Zahlen'],
   ['„White-Label“', '„In Ihrem Namen“', 'Wörterbuch'],
@@ -317,9 +317,9 @@ r.table(['Maßnahme', 'Inhalt', 'Beruht auf Befund', 'Quelle'], [
 ], [16, 28, 32, 24], { size: 15 });
 
 r.h1('Anhang B: Wo sich die Grundlagen widersprechen und was gilt');
-r.p('Marketing-Schlüssel (19.10.), Strategiebericht Pricing (01.10.) und Sprach-Leitfaden (22.10.) passen fast überall zusammen. An sieben Stellen weichen sie voneinander ab. Für die Außendarstellung gilt jeweils die belegte oder die jüngere Fassung:');
+r.p('Marketing-Schlüssel (19.10.), Strategiebericht Pricing (01.10.) und Sprach-Leitfaden (22.10.) passen fast überall zusammen. An sieben Stellen weichen sie voneinander ab. Für die Außendarstellung gilt, was rechts steht:');
 r.table(['Thema', 'Abweichung', 'Was gilt'], [
-  ['Rechnung für Agenturen', 'Schlüssel: 15 € Weiterberechnung, trägt sich ab dem 7. Text. Pricing: 12 € gemessen.', '12 €, trägt sich ab dem 9. Text (99 € ÷ 12 € = 8,25)'],
+  ['Rechnung für Agenturen', 'Schlüssel: 15 € Weiterberechnung, trägt sich ab dem 7. Text. Leitfaden: 15 € unbelegt, 12 € gemessen. Pricing: 12 € aus einem Gespräch mit einer kleinen Agentur (n = 1).', '15 € ist das Rechenbeispiel für kleine und mittlere Agenturen (99 € ÷ 15 € = 6,6, also ab dem 7. Text), immer als Beispiel formuliert. 12 € ist ein einzelner Datenpunkt. Was eine Agentur weiterberechnet, entscheidet sie selbst.'],
   ['Vertragsstrafe 5.500 €', 'Schlüssel und Pricing 2.2 nennen sie; Leitfaden: nur mit Quelle am konkreten Fall', 'nicht in Website, Blog oder Anzeigen ohne Quelle am Fall'],
   ['„Anwalt ab 3.000 €“, „Abmahnung ab 5.000 €“', 'Schlüssel: „zu belegen“; Leitfaden: unbelegt', 'raus; „ab 399 €“ mit abgelegter Quelle oder 400 € (RechtVital)'],
   ['Abmahnschutz', 'Schlüssel: „nie so“; Leitfaden: als Thema und Steigerung erlaubt, nie als Versprechen', 'Leitfaden, Regel 2.3'],
@@ -336,7 +336,7 @@ r.numbered([
   '**„Prüfung“, nie „Vorprüfung“ oder „Vorfilter“.** KI nur nebenbei, nie in Title oder H1.',
   '**Abmahnschutz nur als Thema**, nie als Versprechen.',
   '**Den Anwalt einordnen, nicht schlechtmachen:** „Zum Anwalt geht nur, was rot bleibt.“ Kein Preis- oder Tempovergleich mit Anwälten ohne Quelle.',
-  '**Zahlen nur aus der Belegt-Liste** oder mit eigener Quelle, Datum und Screenshot.',
+  '**Zahlen nur aus der Belegt-Liste** oder mit eigener Quelle, Datum und Screenshot. Rechenbeispiele wie „15 € je Text“ immer als Beispiel formulieren.',
 ]);
 r.table(['So sagen', 'Nie so'], [
   ['Prüfung, prüfen', 'Vorprüfung, Vorfilter'],

@@ -11,9 +11,9 @@ function task(id, title, what, why, done, code) {
   if (done) r.p(`**Fertig, wenn:** ${done}`, { spacing: { after: 200, line: 290 }, run: { color: '444444' } });
 }
 
-r.body.push(new D.Paragraph({ spacing: { before: 200, after: 120 }, children: [new D.TextRun({ text: 'GEO-MASSNAHMENPLAN · AUFGABEN FÜR LEON', font: 'Avenir Next', size: 15, color: '6B6B6B', characterSpacing: 30 })] }));
-r.body.push(new D.Paragraph({ spacing: { after: 120 }, children: [new D.TextRun({ text: 'Was Leon tun soll', font: 'Avenir Next', bold: true, size: 44 })] }));
-r.body.push(new D.Paragraph({ spacing: { after: 240 }, children: [new D.TextRun({ text: 'Punkt für Punkt, mit dem Grund dahinter · Stand 28. Oktober 2026', font: 'Avenir Next', size: 22, color: '555555' })] }));
+r.body.push(new D.Paragraph({ spacing: { before: 200, after: 120 }, children: [new D.TextRun({ text: 'GEO-MASSNAHMENPLAN · AUFGABEN FÜR LEON', font: 'Helvetica', size: 15, color: '6B6B6B', characterSpacing: 30 })] }));
+r.body.push(new D.Paragraph({ spacing: { after: 120 }, children: [new D.TextRun({ text: 'Was Leon tun soll', font: 'Helvetica', bold: true, size: 44 })] }));
+r.body.push(new D.Paragraph({ spacing: { after: 240 }, children: [new D.TextRun({ text: 'Punkt für Punkt, mit dem Grund dahinter · Stand 28. Oktober 2026', font: 'Helvetica', size: 22, color: '555555' })] }));
 
 r.callout('WORUM ES GEHT', 'Das neue Pricing braucht Reichweite: Praxen, Heilberufe und Hersteller sollen über die Website kommen und kostenlos prüfen. Heute sperrt die Website Gemini aus, erzählt eine alte Geschichte und hat kaum fremde Stimmen. Deine Aufgaben machen die Website lesbar und eindeutig. Massi liefert die Texte und sammelt fremde Stimmen.');
 r.p('Grundlage: GEO-Audit (Teil 1) und GEO-Maßnahmenplan (Teil 2) vom 28. Oktober. Die Nummern L1 bis L16 und E1 bis E4 sind dort dieselben. Textvorschläge in diesem Blatt sind Vorschläge; den Wortlaut gibt Massi frei.', { run: { size: 18, color: '555555' } });
@@ -134,7 +134,7 @@ r.bullets([
   '**Keine Seiten in Masse.** Google warnt ausdrücklich vor massenhaft erzeugten Seiten; wenige tiefe Seiten gewinnen.',
   '**Keine gekauften Bewertungen oder Erwähnungen.** Google warnt vor unechten Erwähnungen, und es wäre irreführend.',
   '**Kein „KI“ in Title oder H1**, kein „HWG“ allein im Title, kein „Vorprüfung“.',
-  '**Keine Preise in neuen Seiten vor E2** und keine Zahl, die nicht in der Belegt-Liste des Leitfadens steht.',
+  '**Keine Preise in neuen Seiten vor E2** und keine Zahl, die nicht in der Belegt-Liste des Leitfadens steht. Rechenbeispiele wie „15 € je Text“ nur als Beispiel formuliert.',
 ]);
 
 r.body.pop(); // drop trailing list spacer

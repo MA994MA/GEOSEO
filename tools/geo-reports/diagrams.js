@@ -5,7 +5,7 @@ const OUT = path.join(__dirname, 'fig');
 
 const CSS = `
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: #fff; font-family: 'JetBrains Mono', monospace; color: #111; font-size: 13px; line-height: 1.35; }
+body { background: #fff; font-family: Helvetica, 'Nimbus Sans', Arial, sans-serif; color: #111; font-size: 14px; line-height: 1.35; }
 #c { display: inline-block; padding: 18px 22px; position: relative; }
 .box { border: 1.2px solid #111; padding: 8px 10px; background: #fff; white-space: pre-line; position: absolute; }
 .box.dash { border-style: dashed; }
