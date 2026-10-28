@@ -11,7 +11,7 @@ function folie(nr, title, minutes, onSlide, say) {
 
 r.body.push(new D.Paragraph({ spacing: { before: 200, after: 120 }, children: [new D.TextRun({ text: 'SPRECHSKRIPT FÜR LEON', font: 'Helvetica', size: 15, color: '6B6B6B', characterSpacing: 30 })] }));
 r.body.push(new D.Paragraph({ spacing: { after: 120 }, children: [new D.TextRun({ text: 'GEO und SEO mit unseren Kampagnen', font: 'Helvetica', bold: true, size: 44 })] }));
-r.body.push(new D.Paragraph({ spacing: { after: 240 }, children: [new D.TextRun({ text: '7 Folien · etwa 10 Minuten · Stand 28. Oktober 2026', font: 'Helvetica', size: 22, color: '555555' })] }));
+r.body.push(new D.Paragraph({ spacing: { after: 240 }, children: [new D.TextRun({ text: '8 Folien · etwa 11 Minuten · Stand 28. Oktober 2026', font: 'Helvetica', size: 22, color: '555555' })] }));
 
 folie(1, 'Worum es geht', '1 Minute',
   'Kampagnen wecken Interesse. Google und KI müssen es auffangen.',
@@ -36,7 +36,26 @@ folie(3, 'Wie Suche und Kampagnen zusammenspielen', '1,5 Minuten',
     'Und wenn Verbände oder Agenturen unsere Kampagnen teilen, sprechen andere über uns. Genau das fehlt uns bei Google und in den KI-Antworten.',
   ]);
 
-folie(4, 'Was du machst', '2 Minuten',
+folie(4, 'Was sich an unserer Sprache sofort ändert', '1,5 Minuten',
+  'Alt raus, neu rein. Überall dieselben Worte.',
+  [
+    'Die KI-Systeme wiederholen, was auf unserer Website steht. Deshalb räumen wir zuerst die Sprache auf. Und Zahlen, die wir nicht belegen können, sind für einen Prüf-Anbieter ein Risiko.',
+    'Die wichtigsten Änderungen:',
+  ]);
+r.table(['Alt', 'Neu', 'Wer'], [
+  ['„Vorprüfung“, „Vorfilter“, „Healthcare Website Compliance Checker“', '„Prüfung“; Claim „die Prüfung für Gesundheitswerbung“', 'Leon, Massi'],
+  ['„Anwalt ab 3.000 €“, „Abmahnung ab 5.000 €“, „1.000 geprüfte Texte“', 'raus; „Anwalt ab 399 €“ nur mit Quelle', 'Leon'],
+  ['„15 € je Text“', 'bleibt, aber klar als Rechenbeispiel', 'Leon'],
+  ['Starter, Professional', 'Gratis, Praxis, Hersteller, Agentur, Team (mit dem Upgrade)', 'Leon'],
+  ['„White-Label“, „Video-Audit“', '„In Ihrem Namen“, „Einzel-Audit“', 'Leon'],
+  ['„Für jede Regel ein Spezialist“, „12 Paragrafen“', 'ohne Zahl', 'Massi'],
+  ['„Stark werben. Sauber formulieren.“', '„Stark werben. Ruhig veröffentlichen.“', 'Massi'],
+  ['„Er stellt keine Rechtsberatung dar“', '„Den Einzelfall bewertet Ihre Kanzlei.“ (Entscheidung 3)', 'Massi, Leon'],
+  ['„HWG-Wächter“, „Compliance-Monitoring“', '„Laufende Website-Prüfung“ (Entscheidung 4)', 'Massi'],
+  ['FinTech (Munich Startup), „technische Vorprüfung“ (LinkedIn)', 'unsere Definition, überall wörtlich gleich', 'Massi'],
+], [40, 44, 16], { size: 15 });
+
+folie(5, 'Was du machst', '2 Minuten',
   'Technik und Preise. Sofort etwa 5 Stunden, dann etwa 4 Tage, dann etwa 5 Tage.',
   [
     '**Sofort:** Gemini und die anderen KI-Crawler hereinlassen. Die Login-Seite aus der Google-Suche nehmen. Titel und Texte im Kopf der Seiten bereinigen. Und die Preisseite: Alle Zahlen raus, die wir nicht belegen können. Für einen Prüf-Anbieter sind die ein echtes Risiko.',
@@ -45,7 +64,7 @@ folie(4, 'Was du machst', '2 Minuten',
     'Alles steht mit Erklärung in deinem Blatt.',
   ]);
 
-folie(5, 'Was ich mache', '1,5 Minuten',
+folie(6, 'Was ich mache', '1,5 Minuten',
   'Eine Stimme, richtige Inhalte, andere sprechen über uns.',
   [
     '**Sofort:** LinkedIn und Munich Startup auf unsere Beschreibung umstellen. Dort steht noch FinTech, deshalb hält Gemini uns dafür. Den Text für „Über uns“ schreiben. Einen Fehler im Vorher-Nachher-Artikel korrigieren.',
@@ -53,7 +72,7 @@ folie(5, 'Was ich mache', '1,5 Minuten',
     '**Idee:** Agenturen, die über das Thema schreiben, als Partner gewinnen.',
   ]);
 
-folie(6, 'Was wir heute entscheiden', '2,5 Minuten',
+folie(7, 'Was wir heute entscheiden', '2,5 Minuten',
   'Fünf Entscheidungen.',
   [
     '**1. Gemini freigeben?** Ja. Sonst nennt Gemini uns nicht.',
@@ -64,7 +83,7 @@ folie(6, 'Was wir heute entscheiden', '2,5 Minuten',
     'Offen bei dir: Bleiben wir bei Plausible, brauchen wir eine Markenrechtlerin, und wann sprichst du mit den Praxen und tigovit über die Preise?',
   ]);
 
-folie(7, 'Was es bringt und wie es weitergeht', '1 Minute',
+folie(8, 'Was es bringt und wie es weitergeht', '1 Minute',
   'In 90 Tagen: Gemini kennt uns, mindestens 5 fremde Quellen statt 2, neue Artikel in den Top 10.',
   [
     'Es kostet vor allem unsere Zeit, kaum Geld. Nach vier Wochen messen wir mit denselben Fragen nach. Was nicht wirkt, ändern wir.',
