@@ -1,6 +1,8 @@
 # Kampagnen-Links: UTM, Kurzlinks und Auswertung
 
-Stand 28.10.2026 · Arbeitsgrundlage für Massi und Leon · gehört zu L13 (Messung) und M11 (LinkedIn)
+Stand 28.10.2026 · Arbeitsgrundlage für Massi und Leon · gehört zu L13 (Messung), L18 (Blog-Kategorien) und M11 (LinkedIn)
+
+**Status Kurzlinks: offene Frage**, noch nicht entschieden. UTM-Markierungen gelten unabhängig davon.
 
 ## Kurz gesagt
 
@@ -72,10 +74,12 @@ Plausible unterscheidet Groß- und Kleinschreibung: `LinkedIn` und `linkedin` we
 
 | Art der Kampagne | Ziel des Kurzlinks |
 |---|---|
-| **Themen-Kampagne** (ein riskanter Satz, eine Frage) | der passende **Blogartikel**. Er muss vor dem Start der Kampagne online sein. |
-| **Angebots-Kampagne** (Demo, Empfehlung, Paket) | **Seite der Zielgruppe** (`/agenturen` gibt es schon; `/arztpraxen`, `/heilberufe`, `/hersteller` folgen), bis dahin Startseite |
+| **Themen-Kampagne** (ein riskanter Satz, eine Frage), für alle vier Türen inklusive Agenturen | der passende **Blogartikel** oder die **Blog-Kategorie der Tür** (`/blog/agenturen`, `/blog/aerzte`, `/blog/heilberufe`, `/blog/hersteller`). Der Artikel muss vor dem Start der Kampagne online sein. |
+| **Angebots-Kampagne** (Paket, Funktionen für Kaufbereite) | **Seite der Zielgruppe** (`/agenturen` gibt es schon; `/arztpraxen`, `/heilberufe`, `/hersteller` folgen), bis dahin die Blog-Kategorie oder die Startseite |
 | **Direkt zur Prüfung** (z. B. Story „Ihr Satz, kostenlos geprüft“) | `/kostenlos-pruefen` |
 | **Nie als Kampagnenziel** | Preisseite, Über uns |
+
+Jeder Artikel endet mit **„Drei Texte im Monat kostenlos prüfen“**. Gratis mit 3 Prüfungen im Monat ist aktiv.
 
 ## 5. Kampagnen-Link-Liste (Vorlage)
 
@@ -114,6 +118,6 @@ Die genaue Bedienung der Kampagnen-Ansicht ist nicht nachgeprüft; im Dashboard 
 
 ## 8. Offen
 
-- Kurzlinks als eigene Aufgabe in Leons Blatt (Vorschlag: L18).
+- **Kurzlinks:** offene Frage für Massi und Leon (steht im Plan unter 4.4).
 - Kampagnen-Link-Liste als gemeinsame Tabelle anlegen.
-- Blog nach Türen sortieren (Kategorien Agenturen, Ärzte, Heilberufe, Hersteller) als Zwischenlösung, bis die Zielgruppen-Seiten stehen.
+- **Entschieden:** Blog-Kategorien für alle vier Türen (L18, Leon, 30 Tage).

@@ -74,7 +74,7 @@ task('M7', 'Crunchbase anlegen', [
   'das Crunchbase-Profil mit Definition ist live.');
 task('M8', 'Neue Artikel 1 bis 4', [
   'In dieser Reihenfolge: 1 „Sind Heilversprechen strafbar?“ · 2 „Was kostet eine Prüfung nach dem Heilmittelwerbegesetz?“ · 3 „Welche Werbung darf ein Arzt machen?“ · 4 „Für wen gilt das Heilmittelwerbegesetz?“. Belege und geprüfte Rechtsgrundlagen stehen im Maßnahmenplan, Abschnitt 3.4.',
-  '**Format jeder Seite:** Kurzantwort in zwei Sätzen, der riskante Satz, Norm und Aktenzeichen, wann es doch geht, drei bessere Sätze, ein Agentur-Hinweis, „Ihren Satz kostenlos prüfen“, Stand-Datum und Autor.',
+  '**Format jeder Seite:** Kurzantwort in zwei Sätzen, der riskante Satz, Norm und Aktenzeichen, wann es doch geht, drei bessere Sätze, ein Agentur-Hinweis, „Drei Texte im Monat kostenlos prüfen“, Stand-Datum und Autor.',
   '**Artikel 1:** Risiko vorne, Ruhe am Ende; er endet mit dem besseren Satz, nicht mit dem Strafrahmen. **Artikel 2:** Fremde Preise nur mit Quelle, Datum und Screenshot; eigene Preise erst nach E2, die liefert Leon. Kein „günstiger und schneller als der Anwalt“ (OLG Köln 6 U 263/19).',
 ], 'Diese Fragen stellen Käufer nachweislich (Googles „Weitere Fragen“, Autocomplete, KI-Fragen), und zu keiner gibt es einen Artikel. Das Format ist zugleich die Produktvorführung: Befund, Norm, besserer Satz.',
   'je Artikel ist er live, hat einen LinkedIn-Beitrag und eine fremde Fundstelle (Muster, Schritte 1 bis 3).');
@@ -110,6 +110,7 @@ r.bullets([
   '**Heilpraktiker-Kernsatz:** „liest ab jetzt jemand mit“ klingt nach einem Menschen, der mitliest. Alternative „liest ab jetzt PageCompliance mit“ prüfen.',
   '**Ton für approbierte Psychotherapeuten** getrennt von Heilpraktikern festlegen, bevor der Artikel „Heilpraktiker für Psychotherapie“ kommt.',
   '**Wörterbuch im Leitfaden nachziehen:** Der Wächter heißt gegenüber Kunden der Agentur jetzt „Laufende Website-Prüfung“ statt „Compliance-Monitoring“; der Monatsbericht heißt „Prüfbericht“.',
+  '**Kurzlinks für Kampagnen (Frage):** eigene Kurzlinks wie pagecompliance.de/go/hp-satz für Bio-Links, Stories und QR-Codes. Gemeinsam mit Leon klären; Details in der Arbeitsnotiz „Kampagnen-Links“.',
   '**OMR Reviews später:** anlegen, wenn wir mehr Kunden haben, die bewerten können.',
   '**Instagram (optional):** Profil erst in die Website-Fußzeile und ins Firmen-Markup, wenn es regelmäßig bespielt wird. Link im Profil direkt auf die kostenlose Prüfung oder /heilberufe. Für GEO zählt es wenig, für Vertrauen schon.',
 ]);
@@ -120,6 +121,7 @@ r.table(['Leons Aufgabe', 'braucht von dir', 'Aufgabe'], [
   ['L5', 'Definition (fertig, steht oben)', 'M2'],
   ['L8, L10', 'Faktenblock Über uns; Adresse des Crunchbase-Profils', 'M3, M7'],
   ['L12', 'neuer Vorfilter-Artikel; zusammengeführter Immunsystem-Artikel', 'M5, M6'],
+  ['L18', 'kurze Einleitung je Blog-Kategorie (Agenturen, Ärzte, Heilberufe, Hersteller); Tür je Artikel bestätigen', 'Texte je Tür'],
   ['L15', 'Texte je Tür: /agenturen, /arztpraxen, /heilberufe, /hersteller, /laufende-website-pruefung', 'Texte je Tür'],
   ['L16', 'Text der Vergleichsseite', 'M10'],
 ], [18, 62, 20]);

@@ -16,7 +16,7 @@ r.body.push(new D.Paragraph({ spacing: { after: 120 }, children: [new D.TextRun(
 r.body.push(new D.Paragraph({ spacing: { after: 240 }, children: [new D.TextRun({ text: 'Punkt für Punkt, mit dem Grund dahinter · Stand 28. Oktober 2026', font: 'Helvetica', size: 22, color: '555555' })] }));
 
 r.callout('WORUM ES GEHT', 'Das neue Pricing braucht Reichweite: Praxen, Heilberufe und Hersteller sollen über die Website kommen und kostenlos prüfen. Heute sperrt die Website Gemini aus, erzählt eine alte Geschichte und hat kaum fremde Stimmen. Deine Aufgaben machen die Website lesbar und eindeutig, die Preisseite liegt ganz bei dir. Massi liefert die übrigen Texte und sammelt fremde Stimmen.');
-r.p('Grundlage: GEO-Audit (Teil 1) und GEO-Maßnahmenplan (Teil 2) vom 28. Oktober. Die Nummern L1 bis L17 und E1 bis E5 sind dort dieselben.', { run: { size: 18, color: '555555' } });
+r.p('Grundlage: GEO-Audit (Teil 1) und GEO-Maßnahmenplan (Teil 2) vom 28. Oktober. Die Nummern L1 bis L18 und E1 bis E5 sind dort dieselben.', { run: { size: 18, color: '555555' } });
 
 r.h1('1 Diese Woche entscheiden');
 r.p('Fünf Entscheidungen, gemeinsam mit Massi. L1, L4, L14 und die Wächter-Seite warten darauf.');
@@ -97,7 +97,7 @@ task('L10', '/ueber-uns ausbauen',
   'Perplexity zitiert genau diese Seite. Heute stehen dort nur Vornamen, kein Sitz und kein Jahr.',
   'die Seite nennt alle Fakten und trägt das Markup.');
 task('L11', 'Blog-Vorlage erweitern',
-  'Sichtbares „Stand: <Datum>“ und Autor mit Namen. Ein Feld für Aktenzeichen mit Link zur Quelle. Zwei bis drei interne Links: verwandte Artikel und die Produktseite der Tür. Ein fester Agentur-Hinweis. Am Ende der Aufruf „Ihren Satz kostenlos prüfen“. Im Article-Markup `dateModified` pflegen.',
+  'Sichtbares „Stand: <Datum>“ und Autor mit Namen. Ein Feld für Aktenzeichen mit Link zur Quelle. Zwei bis drei interne Links: verwandte Artikel und die Produktseite der Tür. Ein fester Agentur-Hinweis. Am Ende der Aufruf „Drei Texte im Monat kostenlos prüfen“. Im Article-Markup `dateModified` pflegen.',
   'Kein Artikel hat heute ein Datum, ein Aktenzeichen oder einen internen Link. Bei Gesundheitsthemen zählen Aktualität und Quellen; interne Links verteilen die Stärke der Platz-1-Artikel.',
   'alle 14 Artikel zeigen Stand, Autor und mindestens zwei interne Links.');
 task('L12', 'Weiterleitungen (301) setzen', [
@@ -116,6 +116,12 @@ task('L14', 'Preis-Markup (erst nach E2, wenn Preise v2 live ist)',
   'Markup mit den alten Paketen würde die alte Geschichte maschinenlesbar machen. Software-Rich-Results verlangen ohnehin Bewertungen; das Markup dient der Eindeutigkeit, nicht dem Snippet.',
   'das Markup stimmt Zeile für Zeile mit der sichtbaren Preisseite überein.');
 
+task('L18', 'Blog-Kategorien je Tür', [
+  'Vier Kategorien im Blog: Agenturen, Ärzte, Heilberufe, Hersteller. Jede mit eigener Adresse, etwa `/blog/agenturen`, `/blog/aerzte`, `/blog/heilberufe`, `/blog/hersteller`, und einer kurzen Einleitung von Massi. Jeder Artikel kann mehreren Türen angehören; die Zuordnung steht in der Artikeltabelle im Maßnahmenplan (3.4).',
+  'Am Ende jedes Artikels steht der Aufruf „Drei Texte im Monat kostenlos prüfen“ (Gratis mit 3 Prüfungen im Monat ist aktiv).',
+], 'Der Blog ist der Landeplatz für die Kampagnen, für alle vier Zielgruppen, auch für Agenturen. Eine Kampagne an Heilpraktiker kann dann auf „alle Artikel für Heilberufe“ zeigen. Bis die Seiten je Tür (L15) stehen, sind die Kategorien die Zwischenlösung; das ist weniger Aufwand als vier neue Seiten.',
+  'die vier Kategorien sind live, alle 14 Artikel zugeordnet, und jede Kategorie steht in der Sitemap.');
+
 r.h1('4 In 90 Tagen (etwa 5 Tage)');
 task('L15', 'Produktseiten je Tür', [
   '`/agenturen` (gibt es schon; von „Ihr“ auf „Sie“ umstellen), `/arztpraxen`, `/heilberufe`, `/hersteller` („Nahrungsergänzungsmittel“ in Title und H1), `/laufende-website-pruefung` (nach E4, Zeitform „kommt“, solange nicht live). Texte von Massi.',
@@ -133,6 +139,7 @@ r.p('Diese Punkte gehören nicht zur Technik, schalten aber den GEO-Plan frei:')
 r.bullets([
   '**Gespräche mit mindestens drei Praxen und tigovit führen.** Erst danach stehen die Preise für Praxis und Hersteller fest; davon hängen Preis-Markup (L14), Produktseiten (L15) und Massis Artikel zur Preisfrage ab.',
   '**Markenrechtlerin beauftragen (E4).** „Wächter“ und eine eigene Anmeldung von „PageCompliance“ vor dem Start prüfen lassen.',
+  '**Offene Frage: Kurzlinks für Kampagnen.** Eigene Kurzlinks wie `pagecompliance.de/go/hp-satz`, die auf einen Artikel weiterleiten, für Instagram-Bio, Stories, QR-Codes und Print. Klären wir gemeinsam; Details in der Arbeitsnotiz „Kampagnen-Links“.',
 ]);
 
 r.h1('6 Was du von Massi bekommst');
@@ -140,6 +147,7 @@ r.table(['Deine Aufgabe', 'wartet auf', 'von Massi'], [
   ['L3, L9', 'Titles, Meta-Description, Zeile unter der H1, Startseiten-Texte', 'M12'],
   ['L8, L10', 'Faktenblock Über uns; Profile für sameAs', 'M3, M7'],
   ['L12', 'neu geschriebener Vorfilter-Artikel; zusammengeführter Immunsystem-Artikel', 'M5, M6'],
+  ['L18', 'kurze Einleitung je Blog-Kategorie', 'Texte je Tür'],
   ['L15, L16', 'Texte je Tür; Vergleichsseite', 'Texte je Tür, M10'],
 ], [22, 56, 22]);
 

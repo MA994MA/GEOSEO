@@ -88,7 +88,7 @@ figs.plan_treppe = () => {
   const steps = [
     ['Frage bei Google, ChatGPT, Perplexity oder Gemini', ''],
     ['Seite von PageCompliance: riskanter Satz, Norm,\nbesserer Satz', ''],
-    ['„Ihren Satz kostenlos prüfen“', 'blue'],
+    ['„Drei Texte im Monat kostenlos prüfen“', 'blue'],
     ['Gratis: 3 Prüfungen jeden Monat', ''],
     ['Paket je Tür: Praxis 29 € · Hersteller 99 € ·\nAgentur 99 €', ''],
     ['Team 249 €, wenn mehrere Menschen arbeiten', ''],

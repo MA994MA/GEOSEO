@@ -43,7 +43,7 @@ r.p('Der Plan setzt deshalb nicht bei mehr Artikeln an, sondern an vier Stellen.
 r.numbered([
   '**Die Türen öffnen.** Gemini und DuckDuckGo dürfen die Website für Antworten lesen, Login-Seiten verschwinden aus der Markensuche, Titles und H1 sagen, worum es geht. Etwa ein Arbeitstag für Leon.',
   '**Mit einer Stimme sprechen.** Website, llms.txt, LinkedIn, Munich Startup und jedes Verzeichnis tragen dieselbe Definition, dieselben Pakete und nur belegte Zahlen. KI-Systeme ordnen eine Firma über gleichlautende Beschreibungen ein.',
-  '**Belegte Fragen je Tür beantworten.** Jede Seite beantwortet eine Frage, die Käufer nachweislich stellen, im festen Format: riskanter Satz, Norm, besserer Satz, „Ihren Satz kostenlos prüfen“. So wird jeder Artikel zur Produktvorführung und zum Einstieg in die drei Gratis-Prüfungen jeden Monat.',
+  '**Belegte Fragen je Tür beantworten.** Jede Seite beantwortet eine Frage, die Käufer nachweislich stellen, im festen Format: riskanter Satz, Norm, besserer Satz, „Drei Texte im Monat kostenlos prüfen“. So wird jeder Artikel zur Produktvorführung und zum Einstieg in die drei Gratis-Prüfungen jeden Monat.',
   '**Fremde Stimmen sammeln.** Jede neue Seite bekommt binnen 14 Tagen zwei Erwähnungen außerhalb von pagecompliance.de. Partner-Agenturen zählen doppelt: Sie bringen Links und sind selbst der Hauptkäufer.',
 ]);
 r.figure(FIG('plan_kern.png'), 'Die Antwort und ihre vier Stützen');
@@ -61,7 +61,7 @@ r.h2('Begriffe');
 r.table(['Begriff', 'Bedeutung'], [
   ['Tür', 'Zielgruppe mit eigenem Einstieg: Agentur, Arztpraxis, Heilberufe, Hersteller'],
   ['Muster', 'die fünf festen Schritte, die jede neue Seite durchläuft (Abschnitt 3.1)'],
-  ['Seitenformat', 'fester Aufbau jeder Ratgeber-Seite: Kurzantwort, riskanter Satz, Norm, wann es doch geht, bessere Sätze, Agentur-Hinweis, „Ihren Satz kostenlos prüfen“'],
+  ['Seitenformat', 'fester Aufbau jeder Ratgeber-Seite: Kurzantwort, riskanter Satz, Norm, wann es doch geht, bessere Sätze, Agentur-Hinweis, „Drei Texte im Monat kostenlos prüfen“'],
   ['Fremde Stimme', 'Erwähnung oder Link auf einer Seite, die nicht uns gehört'],
   ['Definition', 'der eine Satz, der PageCompliance überall gleich beschreibt (Abschnitt 3.3)'],
   ['Preise v2, Startseite v3', 'neue Preisseite und Startseite, im Prototyp fertig, noch nicht live'],
@@ -119,7 +119,7 @@ r.p('Was nicht durch Schritt 1 kommt, wird nicht geschrieben. Was nach Schritt 5
 r.figure(FIG('plan_muster.png'), 'Das Muster: fünf Schritte je Seite, danach eine von vier Entscheidungen');
 r.numbered([
   '**Frage belegen.** Nur Fragen mit Nachweis: Google-Autocomplete, Googles „Weitere Fragen“, eine Frage aus dem Fragen-Panel oder ein Satz aus einem Kundengespräch.',
-  '**Eine Seite im festen Format.** Kurzantwort in zwei Sätzen, der riskante Satz, Norm und Aktenzeichen, wann es doch geht, drei bessere Sätze, ein Agentur-Hinweis, „Ihren Satz kostenlos prüfen“, sichtbares Stand-Datum und Autor. Das Format ist die Produktvorführung: Befund, Norm, besserer Satz.',
+  '**Eine Seite im festen Format.** Kurzantwort in zwei Sätzen, der riskante Satz, Norm und Aktenzeichen, wann es doch geht, drei bessere Sätze, ein Agentur-Hinweis, „Drei Texte im Monat kostenlos prüfen“, sichtbares Stand-Datum und Autor. Das Format ist die Produktvorführung: Befund, Norm, besserer Satz.',
   '**Zwei fremde Stimmen in 14 Tagen.** Ein LinkedIn-Beitrag (Firmenseite in Sie, Massis Profil in Du) und eine Fundstelle außerhalb von pagecompliance.de: Gastbeitrag bei einer Partner-Agentur (M9, Idee), Verband, Fachmedium oder Verzeichnis.',
   '**Eine Definition, überall gleich.** Jeder Text über PageCompliance nutzt die Definition aus Abschnitt 3.3 wörtlich.',
   '**Nach vier Wochen messen.** Search Console, Bing „AI Performance“, Fragen-Panel. Danach eine von vier Entscheidungen: halten, verlinken, umschreiben, aufgeben.',
@@ -199,7 +199,9 @@ r.table(['#', 'Arbeitstitel', 'Beleg', 'Tür', 'Geprüfte Grundlage'], [
   ['7', 'Botox und Hyaluron: was die Werbung darf', 'Autocomplete „botox werbung verboten“', 'Ärzte', '§ 10 Abs. 1 HWG (verschreibungspflichtige Arzneimittel nur gegenüber Fachkreisen), § 11 Abs. 1 Satz 3 Nr. 1 HWG, BGH I ZR 170/24.'],
 ], [4, 18, 22, 12, 44], { size: 14 });
 r.p('Danach, in dieser Reihenfolge: Zahnarzt-Werbung, Heilpraktiker für Psychotherapie (eigener Ton), die Liste der zugelassenen Health Claims als HTML-Seite. Herstellerthemen werden erst nach dem Preistest mit tigovit verstärkt; bis dahin erreichen sie Hersteller über deren Agenturen.');
-r.p('**Zu Artikel 1:** Risiko vorne, Ruhe am Ende. Der Artikel endet mit dem besseren Satz und „Ihren Satz kostenlos prüfen“, nicht mit dem Strafrahmen. **Zu Artikel 2:** Fremde Preise nur mit Quelle, Datum und Screenshot. Die Seite stellt Kategorien dar, nicht Wettbewerber bloß (§ 6 UWG), und wird vor Veröffentlichung gegengelesen (M14).');
+r.p('**Zu Artikel 1:** Risiko vorne, Ruhe am Ende. Der Artikel endet mit dem besseren Satz und „Drei Texte im Monat kostenlos prüfen“, nicht mit dem Strafrahmen. **Zu Artikel 2:** Fremde Preise nur mit Quelle, Datum und Screenshot. Die Seite stellt Kategorien dar, nicht Wettbewerber bloß (§ 6 UWG), und wird vor Veröffentlichung gegengelesen (M14).');
+r.h3('Blog-Kategorien je Tür (30 Tage)');
+r.p('Der Blog ist der Landeplatz für alle Themen-Kampagnen, für alle vier Türen, auch für Agenturen: Die Texterin googelt die Praxisfragen ihrer Kunden, und der Agentur-Artikel steht schon auf Platz 1. Leon legt deshalb vier Kategorien an: Agenturen, Ärzte, Heilberufe, Hersteller (L18). Jeder Artikel bekommt eine oder mehrere Türen, wie in der Tabelle oben. Eine Kampagne kann so auf einen Artikel oder auf alle Artikel einer Tür zeigen. Bis die Produktseiten je Tür stehen, sind die Kategorien deren Zwischenlösung; danach verlinkt jede Produktseite ihre Kategorie. Jeder Artikel endet mit „Drei Texte im Monat kostenlos prüfen“; Gratis mit 3 Prüfungen im Monat ist aktiv.');
 r.h3('Produktseiten je Tür (90 Tage)');
 r.p('Auf den acht Werkzeug-Suchen rankt heute keine Produktseite; Wettbewerber tragen den Suchbegriff im Namen. Jede Tür bekommt deshalb eine Produktseite mit ihrem Kernsatz, ihrem Wow-Moment aus dem Prototyp und ihrem Paket. Texte schreibt Massi, Leon baut (L15).');
 r.table(['Seite', 'Kernsatz', 'Wow-Moment (App v3)', 'Paket'], [
@@ -258,14 +260,14 @@ r.h2('4.2 Aufgaben Leon: Technik');
 r.p('Die vollständige Liste mit Code, Textvorschlägen und „Fertig, wenn“ steht im Blatt „Was Leon tun soll“. Kurzfassung:');
 r.table(['Wann', 'Aufgaben', 'Aufwand'], [
   ['sofort', 'L17 Preisseite bereinigen · L1 robots.txt (nach E1 und E5) · L2 noindex /login, /register · L3 Titles, Meta-Description, H1 · L4 Blog-Fußzeile (nach E3) · L5 llms.txt · L6 Sitemap · L7 Search Console, Bing, IndexNow', 'etwa 5 Stunden plus Preisseite'],
-  ['30 Tage', 'L8 Firmen-Markup · L9 Suchbegriff unter der H1 · L10 /ueber-uns · L11 Blog-Vorlage (Stand, Autor, Aktenzeichen, Links) · L12 Weiterleitungen · L13 Messung (Plausible?, markierte Kampagnen-Links) · L14 Preis-Markup (nach E2)', 'etwa 4 Tage'],
+  ['30 Tage', 'L8 Firmen-Markup · L9 Suchbegriff unter der H1 · L10 /ueber-uns · L11 Blog-Vorlage (Stand, Autor, Aktenzeichen, Links) · L12 Weiterleitungen · L13 Messung (Plausible?, markierte Kampagnen-Links) · L14 Preis-Markup (nach E2) · L18 Blog-Kategorien je Tür', 'etwa 4 Tage'],
   ['90 Tage', 'L15 Produktseiten je Tür · L16 Vergleichsseite', 'etwa 5 Tage'],
 ], [12, 70, 18]);
 
 r.h2('4.3 Fünf Entscheidungen für diese Woche');
 r.table(['#', 'Frage', 'Fakten', 'Empfehlung'], [
   ['E1', 'Google-Extended freigeben?', 'Der Token steuert, ob Inhalte für Training künftiger Gemini-Modelle und für Grounding in Gemini Apps und Vertex AI genutzt werden; auf Google-Suche und Ranking hat er keinen Einfluss. Gemini nennt PageCompliance in 0 von 15 Antworten.', 'Freigeben. Notwendig, aber nicht ausreichend: Gemini braucht zusätzlich Rankings.'],
-  ['E2', 'Welches Preismodell zeigt die Website?', 'Live: Starter 99 €, Professional 349 €, Enterprise 699 €, Gratis 2.400 Wörter ohne Konto. Entschieden laut Pricing: Gratis, Agentur 99 €, Team 249 €. Arbeitswerte: Praxis 29 €, Hersteller 99 €, Einzel-Audit 149 €.', 'Leon entscheidet. Preise v2 mit dem Upgrade live. Bis dahin unbelegte Zahlen raus (L17), kein Preis-Markup, keine Preise in neuen Artikeln. Markup zuerst für Gratis, Agentur, Team.'],
+  ['E2', 'Welches Preismodell zeigt die Website?', 'Preisseite live am 27.10.: Starter 99 €, Professional 349 €, Enterprise 699 €, Gratis 2.400 Wörter ohne Konto. Gratis mit 3 Prüfungen im Monat ist inzwischen aktiv (Stand 28.10.). Entschieden laut Pricing: Gratis, Agentur 99 €, Team 249 €. Arbeitswerte: Praxis 29 €, Hersteller 99 €, Einzel-Audit 149 €.', 'Leon entscheidet. Preise v2 mit dem Upgrade live. Bis dahin unbelegte Zahlen raus (L17), kein Preis-Markup, keine Preise in neuen Artikeln. Markup zuerst für Gratis, Agentur, Team.'],
   ['E3', 'Zeile „Er stellt keine Rechtsberatung dar“ unter allen 14 Artikeln?', 'Leitfaden 2.4: „Keine Rechtsberatung“ nur in den AGB, nicht im Marketing. Die Zeile steht heute in der Blog-Vorlage.', '„Dieser Artikel zeigt typische Risikostellen. Den Einzelfall bewertet Ihre Kanzlei.“'],
   ['E4', 'Name der Wächter-Seite und Marke?', 'smugo nutzt „HWG-Wächter“. TMview: keine Marke „HWG-Wächter“, rund 350 Einträge „Wächter“, aktive Marken in den Klassen 9 und 42; „PageCompliance“ ohne Treffer.', 'Seite „Laufende Website-Prüfung“; App-Name „Wächter“; Monatsbericht „Prüfbericht“. „Wächter“ und eine eigene Anmeldung von „PageCompliance“ vor dem Start prüfen lassen.'],
   ['E5', 'Trainingssperre für GPTBot, ClaudeBot, CCBot und Applebot-Extended aufheben?', 'GPTBot, ClaudeBot, CCBot und Applebot-Extended sammeln nur Trainingsdaten; die Zugänge für Antworten (OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, PerplexityBot) sind getrennt und schon offen. Common Crawl (CCBot) wird breit für Trainingsdatensätze weiterverwendet. Einmal gesammelte Daten bleiben in den Archiven.', 'Freigeben für die öffentlichen Seiten; /api/, /admin/, /dashboard/ bleiben gesperrt. Der Engpass ist Bekanntheit, nicht Schutz: Öffentlich stehen Marketingtexte, die sich verbreiten sollen. Der Effekt ist nicht belegt und frühestens mit der nächsten Modellgeneration sichtbar.'],
@@ -278,6 +280,7 @@ r.table(['Offener Punkt', 'Benötigte Information', 'Wer', 'Wofür'], [
   ['Heilpraktiker-Kernsatz', '„liest ab jetzt jemand mit“ klingt nach einem Menschen, der mitliest; Alternative „liest ab jetzt PageCompliance mit“ prüfen', 'Massi', 'Seite /heilberufe, Kampagne'],
   ['Abmahnschutz-Formulierungen', 'anwaltliche Durchsicht der Muster', 'Massi mit Anwältin (M14)', 'Artikel, Anzeigen'],
   ['Marken „Wächter“ und „PageCompliance“', 'Prüfung durch eine Markenrechtlerin', 'Leon', 'App-Name, Start'],
+  ['Kurzlinks für Kampagnen', 'Eigene Kurzlinks wie pagecompliance.de/go/hp-satz für Bio-Links, Stories, QR-Codes und Print? Arbeitsnotiz „Kampagnen-Links“ im Repo', 'Massi und Leon', 'Messung der Kampagnen'],
   ['Messwerkzeug', 'Plausible beibehalten oder ein anderes Werkzeug für L13? Empfehlung: behalten (Daten seit Juni, kein Cookie-Banner nötig laut Anbieter), Kampagnen-Links markieren', 'Leon', 'Messung der Anmeldungen'],
   ['Ton für approbierte Psychotherapeuten', 'getrennt von Heilpraktikern festlegen', 'Massi', 'Artikel Heilpraktiker für Psychotherapie'],
 ], [24, 38, 18, 20], { size: 15 });
@@ -319,6 +322,7 @@ r.table(['Maßnahme', 'Inhalt', 'Beruht auf Befund', 'Quelle'], [
   ['E3, L4', 'Hinweiszeile im Blog', 'Widerspruch zum Leitfaden', 'Leitfaden 2.4'],
   ['E4', 'Laufende Website-Prüfung', 'smugo „HWG-Wächter“; Wächter-Marken', 'TMview 27.10.'],
   ['E5, L1', 'Trainingscrawler freigeben', 'kaum ein Modell kennt die Marke (Audit 2.3, 2.6)', 'Anthropic Help Center; OpenAI-Dokumentation; Common Crawl'],
+  ['L18', 'Blog-Kategorien je Tür', 'Kampagnen brauchen einen Landeplatz je Tür, bevor die Produktseiten stehen', 'Marketing-Schlüssel 2 und 9'],
   ['L13, M13', 'Messung', 'ein Durchlauf ist ein Schnappschuss (Audit 3.3)', 'Plausible, Search Console, Bing'],
 ], [16, 28, 32, 24], { size: 15 });
 

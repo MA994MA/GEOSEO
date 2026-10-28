@@ -29,9 +29,10 @@ folie(2, 'Wo wir stehen', '1,5 Minuten',
   ]);
 
 folie(3, 'Wie Suche und Kampagnen zusammenspielen', '1,5 Minuten',
-  'Kampagne → Suche → unsere Seite → kostenlos prüfen.',
+  'Kampagne → Blog → „Drei Texte im Monat kostenlos prüfen“.',
   [
-    'Jede Kampagne braucht eine Seite, auf der sie landet. Deshalb bauen wir für jede Zielgruppe eine Seite und Artikel zu den Fragen, die die Leute wirklich stellen.',
+    'Jede Kampagne braucht eine Seite, auf der sie landet. Das ist unser Blog, für alle vier Zielgruppen, auch für Agenturen. Er bekommt eine Kategorie je Zielgruppe, und Artikel zu den Fragen, die die Leute wirklich stellen.',
+    'Jeder Artikel endet mit „Drei Texte im Monat kostenlos prüfen“. Das ist unser Gratis-Zugang, und der ist schon aktiv.',
     'Jeder Artikel ist gleich gebaut: riskanter Satz, Gesetz, besserer Satz. Das ist genau unsere LinkedIn-Serie „Ein Satz, drei Fassungen“. Einmal schreiben, zweimal nutzen.',
     'Und wenn Verbände oder Agenturen unsere Kampagnen teilen, sprechen andere über uns. Genau das fehlt uns bei Google und in den KI-Antworten.',
   ]);
@@ -59,7 +60,7 @@ folie(5, 'Was du machst', '2 Minuten',
   'Technik und Preise. Sofort etwa 5 Stunden, dann etwa 4 Tage, dann etwa 5 Tage.',
   [
     '**Sofort:** Gemini und die anderen KI-Crawler hereinlassen. Die Login-Seite aus der Google-Suche nehmen. Titel und Texte im Kopf der Seiten bereinigen. Und die Preisseite: Alle Zahlen raus, die wir nicht belegen können. Für einen Prüf-Anbieter sind die ein echtes Risiko.',
-    '**In 30 Tagen:** Google sagen, wer wir sind, also Firma, Sitz, Gründer. Die Seite „Über uns“ einbauen. Die Blog-Vorlage verbessern. Und messen, woher jede Anmeldung kommt. Dafür bekommen die Links in unseren Kampagnen eine Markierung, dann sehen wir, welche Kampagne wirkt.',
+    '**In 30 Tagen:** Google sagen, wer wir sind, also Firma, Sitz, Gründer. Die Seite „Über uns“ einbauen. Die Blog-Vorlage verbessern und vier Blog-Kategorien anlegen, eine je Zielgruppe. Und messen, woher jede Anmeldung kommt. Dafür bekommen die Links in unseren Kampagnen eine Markierung, dann sehen wir, welche Kampagne wirkt.',
     '**In 90 Tagen:** eine Seite pro Zielgruppe: Agenturen, Arztpraxen, Heilberufe, Hersteller, dazu die „Laufende Website-Prüfung“. Und eine Vergleichsseite. Extra-Seiten für Suchbegriffe wie „HWG-Prüfung“ bauen wir erst, wenn die Messung zeigt, dass sie fehlen. Sonst konkurrieren sie mit der Startseite.',
     'Alles steht mit Erklärung in deinem Blatt.',
   ]);
@@ -80,7 +81,7 @@ folie(7, 'Was wir heute entscheiden', '2,5 Minuten',
     '**3. Den Satz „keine Rechtsberatung“ unter den Artikeln?** Ersetzen durch: „Den Einzelfall bewertet Ihre Kanzlei.“',
     '**4. Name für den Wächter auf der Website?** „Laufende Website-Prüfung“. In der App bleibt es „Wächter“.',
     '**5. Die KI-Modelle mit unseren Texten lernen lassen?** Ja. Dann kennen sie uns auch ohne Websuche. Ob das wirkt, ist allerdings nicht sicher.',
-    'Offen bei dir: Bleiben wir bei Plausible? Mein Vorschlag: ja, mit markierten Kampagnen-Links. Brauchen wir eine Markenrechtlerin, und wann sprichst du mit den Praxen und tigovit über die Preise?',
+    'Offen bei dir: Bleiben wir bei Plausible? Mein Vorschlag: ja, mit markierten Kampagnen-Links. Bauen wir eigene Kurzlinks für die Kampagnen? Brauchen wir eine Markenrechtlerin, und wann sprichst du mit den Praxen und tigovit über die Preise?',
   ]);
 
 folie(8, 'Was es bringt und wie es weitergeht', '1 Minute',

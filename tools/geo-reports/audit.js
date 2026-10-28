@@ -224,7 +224,7 @@ r.table(['Hebel', 'Was er löst', 'Aufwand', 'Wer'], [
   ['**Fremde Stimmen:** Verzeichnisse, Partner-Agenturen, LinkedIn, Vergleichsseite', 'fehlende Autorität', 'laufend', 'Massi'],
 ], [42, 24, 20, 14]);
 r.h2('3.2 Ein Muster macht aus Artikeln Reichweite');
-r.p('Die beiden Platz-1-Artikel sind kein Zufall, sondern ein Muster: eine belegte, dünn besetzte Frage und eine genaue Antwort. Teil 2 macht daraus fünf feste Schritte: Frage belegen, Seite im festen Format, zwei fremde Stimmen, eine Definition überall, nach vier Wochen messen. Das Seitenformat ist zugleich die Produktvorführung: der riskante Satz, die Norm, der bessere Satz und am Ende „Ihren Satz kostenlos prüfen“, der Einstieg in die drei Gratis-Prüfungen jeden Monat.');
+r.p('Die beiden Platz-1-Artikel sind kein Zufall, sondern ein Muster: eine belegte, dünn besetzte Frage und eine genaue Antwort. Teil 2 macht daraus fünf feste Schritte: Frage belegen, Seite im festen Format, zwei fremde Stimmen, eine Definition überall, nach vier Wochen messen. Das Seitenformat ist zugleich die Produktvorführung: der riskante Satz, die Norm, der bessere Satz und am Ende „Drei Texte im Monat kostenlos prüfen“, der Einstieg in den Gratis-Zugang.');
 r.h2('3.3 Was das Audit nicht leisten kann');
 r.bullets([
   'Jede Frage wurde einmal je System gestellt. KI-Antworten schwanken; erst drei Durchläufe zeigen einen Trend.',
