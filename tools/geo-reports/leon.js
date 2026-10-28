@@ -15,8 +15,8 @@ r.body.push(new D.Paragraph({ spacing: { before: 200, after: 120 }, children: [n
 r.body.push(new D.Paragraph({ spacing: { after: 120 }, children: [new D.TextRun({ text: 'Was Leon tun soll', font: 'Helvetica', bold: true, size: 44 })] }));
 r.body.push(new D.Paragraph({ spacing: { after: 240 }, children: [new D.TextRun({ text: 'Punkt für Punkt, mit dem Grund dahinter · Stand 28. Oktober 2026', font: 'Helvetica', size: 22, color: '555555' })] }));
 
-r.callout('WORUM ES GEHT', 'Das neue Pricing braucht Reichweite: Praxen, Heilberufe und Hersteller sollen über die Website kommen und kostenlos prüfen. Heute sperrt die Website Gemini aus, erzählt eine alte Geschichte und hat kaum fremde Stimmen. Deine Aufgaben machen die Website lesbar und eindeutig. Massi liefert die Texte und sammelt fremde Stimmen.');
-r.p('Grundlage: GEO-Audit (Teil 1) und GEO-Maßnahmenplan (Teil 2) vom 28. Oktober. Die Nummern L1 bis L16 und E1 bis E5 sind dort dieselben. Textvorschläge in diesem Blatt sind Vorschläge; den Wortlaut gibt Massi frei.', { run: { size: 18, color: '555555' } });
+r.callout('WORUM ES GEHT', 'Das neue Pricing braucht Reichweite: Praxen, Heilberufe und Hersteller sollen über die Website kommen und kostenlos prüfen. Heute sperrt die Website Gemini aus, erzählt eine alte Geschichte und hat kaum fremde Stimmen. Deine Aufgaben machen die Website lesbar und eindeutig, die Preisseite liegt ganz bei dir. Massi liefert die übrigen Texte und sammelt fremde Stimmen.');
+r.p('Grundlage: GEO-Audit (Teil 1) und GEO-Maßnahmenplan (Teil 2) vom 28. Oktober. Die Nummern L1 bis L17 und E1 bis E5 sind dort dieselben. Textvorschläge in diesem Blatt sind Vorschläge; den Wortlaut gibt Massi frei.', { run: { size: 18, color: '555555' } });
 
 r.h1('1 Diese Woche entscheiden');
 r.p('Fünf Entscheidungen, gemeinsam mit Massi. L1, L4, L14 und die Wächter-Seite warten darauf.');
@@ -28,7 +28,15 @@ r.table(['#', 'Entscheidung', 'Empfehlung', 'Warum'], [
   ['E5', 'Trainingssperre für GPTBot, ClaudeBot, CCBot, Applebot-Extended aufheben?', 'Ja, für die öffentlichen Seiten. /api/, /admin/, /dashboard/ bleiben gesperrt.', 'Die Sperre kostet keine Zitate, hält uns aber aus den Trainingsdaten heraus; ein Modell kennt uns dann nur bei Websuche. Öffentlich stehen Marketingtexte, die sich verbreiten sollen. Effekt nicht belegt, kommt frühestens mit der nächsten Modellgeneration; gesammelte Daten lassen sich nicht zurückholen.'],
 ], [6, 20, 34, 40], { size: 15 });
 
-r.h1('2 Sofort bauen (zusammen etwa 5 Stunden)');
+r.h1('2 Sofort bauen (etwa 5 Stunden Technik plus Preisseite)');
+task('L17', 'Preisseite bereinigen (sofort, auch bevor Preise v2 live ist)', [
+  '**Raus:** „Anwalt ab 3.000 €“, „Abmahnung ab 5.000 €“, „1.000 geprüfte Texte“, „White-Label“, „Video-Audit“, „Spezialisten für jeden HWG-Paragrafen“.',
+  '**Ersetzen:** „White-Label“ durch „In Ihrem Namen“; „Video-Audit“ durch „Einzel-Audit 149 €“ (sobald Preise v2 live ist). Als Preisanker „Anwaltliche Einzelprüfung ab 399 €“, aber nur mit abgelegter Fundstelle aus Recherche O2 samt Screenshot; sonst „400 € netto je Internetseite bis 550 Wörter“ (RechtVital, abgerufen 27.10., Screenshot sichern).',
+  '**Rechenbeispiel:** „15 € je Text“ darf bleiben, klar als Beispiel formuliert. „Trägt sich ab dem 24. Text“ rechnet mit Professional; mit Preise v2 heißt es „ab dem 7. Text“.',
+  '**Nicht auf die Website:** der Pitch-Satz „rund 600 € statt 2.000 €“; er steht nicht in der Belegt-Liste.',
+], 'Du verantwortest die Preise. Ein Anbieter, der Werbeaussagen prüft, darf auf der eigenen Preisseite keine unbelegten Zahlen zeigen; das ist ein eigenes Risiko nach § 5 UWG. Und KI-Systeme geben die Zahlen weiter.',
+  'jede Zahl auf der Preisseite steht in der Belegt-Liste oder hat Quelle und Screenshot; der Preisanker ist vor Veröffentlichung gegengelesen.');
+
 task('L1', 'robots.txt: KI-Crawler hereinlassen (nach E1 und E5)', [
   'Google-Extended, DuckAssistBot und, nach E5, GPTBot, ClaudeBot, CCBot und Applebot-Extended aus der Disallow-Liste nehmen und in einer Gruppe erlauben. Den § 44b-Vorbehalt für diese Crawler streichen.',
   'Wichtig: Ein Crawler mit eigener Gruppe liest die Regeln unter `User-agent: *` nicht mehr. Die Sperren für /api/, /admin/ und /dashboard/ deshalb in der Gruppe wiederholen. Lautet E5 „nein“, nur Google-Extended und DuckAssistBot in die Gruppe aufnehmen.',
@@ -126,7 +134,6 @@ r.table(['Deine Aufgabe', 'wartet auf', 'von Massi'], [
   ['L3, L9', 'Titles, Metas, Zeile unter der H1, Startseiten-Texte', 'M12'],
   ['L8, L10', 'Faktenblock Über uns; Profile für sameAs', 'M3, M7'],
   ['L12', 'neu geschriebener Vorfilter-Artikel; zusammengeführter Immunsystem-Artikel', 'M5, M6'],
-  ['Preisseite', 'bereinigter Text ohne unbelegte Zahlen', 'M1'],
   ['L15, L16', 'Texte je Tür; Vergleichsseite', 'Texte je Tür, M10'],
 ], [22, 56, 22]);
 
