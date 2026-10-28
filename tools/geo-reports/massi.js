@@ -23,14 +23,15 @@ r.h1('1 Diese Woche mit Leon entscheiden');
 r.table(['#', 'Entscheidung', 'Empfehlung', 'Dein Anteil'], [
   ['E1', 'Google-Extended freigeben?', 'ja', 'mitentscheiden'],
   ['E2', 'Welche Preise zeigt die Website?', 'Preise v2 mit dem Upgrade; bis dahin unbelegte Zahlen raus', 'Leon entscheidet; du schreibst keine Preise in neue Artikel, bis E2 steht'],
-  ['E3', 'Zeile „Er stellt keine Rechtsberatung dar“ unter den Artikeln?', 'ersetzen durch „Dieser Artikel zeigt typische Risikostellen. Den Einzelfall bewertet Ihre Kanzlei.“', 'mit der Anwältin abstimmen'],
-  ['E4', 'Name der Wächter-Seite?', '„Compliance-Monitoring für Gesundheitswerbung“', 'Text der Seite, sobald entschieden'],
+  ['E3', 'Zeile „Er stellt keine Rechtsberatung dar“ unter den Artikeln?', 'ersetzen durch „Dieser Artikel zeigt typische Risikostellen. Den Einzelfall bewertet Ihre Kanzlei.“', 'mitentscheiden'],
+  ['E4', 'Name der Wächter-Seite?', '„Laufende Website-Prüfung“; App-Name bleibt „Wächter“; Monatsbericht heißt „Prüfbericht“', 'Text der Seite'],
   ['E5', 'Trainingscrawler (GPTBot, ClaudeBot, CCBot, Applebot-Extended) freigeben?', 'ja, für die öffentlichen Seiten', 'mitentscheiden'],
 ], [6, 30, 36, 28], { size: 15 });
 
 r.h1('2 Sofort (diese Woche)');
 task('M2', 'Eine Definition überall: LinkedIn und Munich Startup', [
   'LinkedIn-Info der Firmenseite auf die Definition umstellen. Die Seite bitte selbst prüfen; ohne Login war sie für die Erhebung nicht lesbar.',
+  'In der LinkedIn-Info nach „Vorprüfung“ und „rechtssicher“ suchen und ersetzen. Die Profile von Leon und dir mit der Firmenseite verknüpfen.',
   'Bei Munich Startup den Beschreibungstext ersetzen und die Kategorien FinTech und InsurTech entfernen lassen. Dort steht PageCompliance heute unter „FinTech | InsurTech | LegalTech | RegTech“.',
   'Die Definition, wörtlich:',
 ], 'Gemini ordnet PageCompliance dem FinTech-Bereich zu; Munich Startup ist dafür eine wahrscheinliche Quelle. Perplexity zitiert uns überwiegend über LinkedIn und gibt dort „technische Vorprüfung“ weiter. KI-Systeme ordnen eine Firma über gleichlautende Beschreibungen ein.',
@@ -49,10 +50,13 @@ task('M4', 'Vorher-Nachher-Artikel korrigieren', [
 r.h1('3 In 30 Tagen');
 task('M12', 'Texte für die Startseite', [
   '**Title:** Vorschlag „PageCompliance – die Prüfung für Gesundheitswerbung“.',
-  '**Meta-Description:** Vorschlag „Werbetexte für Praxen, Heilberufe und Hersteller prüfen: Risiken nach Heilmittelwerbegesetz, Health-Claims-Verordnung und UWG, mit besserem Satz.“',
-  '**Zeile unter der H1:** Vorschlag „Die Prüfung für Gesundheitswerbung nach Heilmittelwerbegesetz, Health-Claims-Verordnung und UWG.“',
+  '**Meta-Description:** Vorschlag',
+  '1. „Gesundheitstexte nach HWG, HCVO und UWG prüfen. Für Agenturen, Praxen, Heilberufe und Hersteller: jeder Befund mit besserem Satz, bereit zur Freigabe.“',
+  '2. „Gesundheitstexte prüfen, für Agenturen, Praxen, Heilberufe und Hersteller. Jeder Befund mit Norm und dem besseren Satz, bereit zur Freigabe.“',
+  '**Zeile unter der H1:** Vorschlag „Die Prüfung für Gesundheitswerbung nach Heilmittelwerbegesetz, Health-Claims-Verordnung (und UWG).“',
   '**Ersatz für „Für jede Regel ein Spezialist.“ und „12 Paragrafen“:** ohne Zahl; die Spezialisten als endloser Strom zeigen, nicht zählen.',
-  '**Blog-Title:** Vorschlag „Ratgeber Gesundheitswerbung | PageCompliance“.',
+  '**Blog-Title:** Vorschlag „Ratgeber für Gesundheitstexte | PageCompliance“.',
+  '**Blog, H1:** „Stark werben. Sauber formulieren.“ ersetzen durch „Stark werben. Ruhig veröffentlichen.“ „Sauber“ ist laut Leitfaden ein Urteilswort.',
 ], 'Live stehen „Healthcare Website Compliance Checker“ und dreimal „Vorprüfung“. Der Claim „Compliance in Sekunden.“ sagt einer Suchmaschine nicht, worum es geht. Nachzählbare Prüfer-Zahlen verbietet der Leitfaden.',
   'die Texte liegen bei Leon (L3, L9).');
 task('M5', 'Vorfilter-Artikel neu schreiben',
@@ -75,7 +79,7 @@ task('M8', 'Neue Artikel 1 bis 4', [
   '**Artikel 1:** Risiko vorne, Ruhe am Ende; er endet mit dem besseren Satz, nicht mit dem Strafrahmen. **Artikel 2:** Fremde Preise nur mit Quelle, Datum und Screenshot; eigene Preise erst nach E2, die liefert Leon. Kein „günstiger und schneller als der Anwalt“ (OLG Köln 6 U 263/19).',
 ], 'Diese Fragen stellen Käufer nachweislich (Googles „Weitere Fragen“, Autocomplete, KI-Fragen), und zu keiner gibt es einen Artikel. Das Format ist zugleich die Produktvorführung: Befund, Norm, besserer Satz.',
   'je Artikel ist er live, hat einen LinkedIn-Beitrag und eine fremde Fundstelle (Muster, Schritte 1 bis 3).');
-task('M9', 'Partner-Agenturen ansprechen', [
+task('M9', 'Partner-Agenturen ansprechen – IDEE', [
   'envyo.de, get-luna.de, buntdigital.de, pixelrobots.de, huchel-medienagentur.de, adfera.de. Angebot: Gastbeitrag, Tool-Erwähnung oder Partnerschaft. Ansprache in Sie.',
   'Nicht smugo: smugo bietet Agenturen selbst einen HWG-Dienst als White-Label-Partnerschaft an.',
   'Kernaussage für die Anfrage, als Vorschlag:',
@@ -83,7 +87,7 @@ task('M9', 'Partner-Agenturen ansprechen', [
   'mindestens zwei Zusagen für Gastbeitrag oder Erwähnung.',
   'Sie bauen die Websites, wir prüfen die Texte darauf. Ihre Kunden fragen, ob sie das so schreiben dürfen; wir zeigen jede kritische Stelle mit Norm und besserem Satz. Gern schreiben wir einen Beitrag für Ihre Leser, und Ihre Kunden prüfen mit uns in Ihrem Namen.');
 task('M11', 'Jeder Artikel ein LinkedIn-Beitrag',
-  'Binnen 14 Tagen nach Veröffentlichung. Firmenseite in Sie, dein Profil in Du. Format aus dem Marketing-Schlüssel: „Ein Satz, drei Fassungen“, also ein echter Satz aus dem Gesundheitsmarketing, der Befund, der bessere Satz, Ende „Bereit zur Freigabe“.',
+  'Binnen 14 Tagen nach Veröffentlichung. Firmenseite in Sie, dein Profil in Du. Format aus dem Marketing-Schlüssel: „Ein Satz, drei Fassungen“, also ein echter Satz aus dem Gesundheitsmarketing, der Befund, der bessere Satz, Ende „Bereit zur Freigabe“. Falls M9 umgesetzt wird, zusätzlich eine Gastbeitrag-Version für eine Partner-Agentur.',
   'Schritt 3 des Musters: zwei fremde Stimmen je Seite. LinkedIn ist heute die Quelle, über die Perplexity uns zitiert.',
   'jeder neue Artikel hat seinen Beitrag.');
 
@@ -97,7 +101,7 @@ task('M13', 'Wiederholungsmessung',
   'Ein Durchlauf ist ein Schnappschuss, drei zeigen einen Trend. Nach der Messung bekommt jede Seite eine Entscheidung: halten, verlinken, umschreiben, aufgeben.',
   'der Vergleich mit den Ausgangswerten vom 26.10. liegt vor.');
 task('M14', 'Anwaltlich gegenlesen lassen',
-  'Abmahnschutz-Formulierungen, die Hinweiszeile im Blog (E3), Artikel 2 zur Preisfrage, die Vergleichsseite. Den Preisanker auf der Preisseite lässt Leon prüfen.',
+  'Abmahnschutz-Formulierungen, Artikel 2 zur Preisfrage, die Vergleichsseite. Den Preisanker auf der Preisseite lässt Leon prüfen.',
   'Steht im Sprach-Leitfaden als offen. Ein Prüf-Anbieter muss in der eigenen Werbung sauber sein.',
   'die Befunde sind eingearbeitet.');
 
@@ -106,6 +110,7 @@ r.bullets([
   '**Sprach-Leitfaden nachziehen:** In Abschnitt 7 stehen „15 € je Text“ und „trägt sich ab dem 7. Text“ noch unter „Unbelegt“. Neu: 15 € ist das Rechenbeispiel für kleine und mittlere Agenturen, immer als Beispiel formuliert.',
   '**Heilpraktiker-Kernsatz:** „liest ab jetzt jemand mit“ klingt nach einem Menschen, der mitliest. Alternative „liest ab jetzt PageCompliance mit“ prüfen.',
   '**Ton für approbierte Psychotherapeuten** getrennt von Heilpraktikern festlegen, bevor der Artikel „Heilpraktiker für Psychotherapie“ kommt.',
+  '**Wörterbuch im Leitfaden nachziehen:** Der Wächter heißt gegenüber Kunden der Agentur jetzt „Laufende Website-Prüfung“ statt „Compliance-Monitoring“; der Monatsbericht heißt „Prüfbericht“.',
   '**Instagram (optional):** Profil erst in die Website-Fußzeile und ins Firmen-Markup, wenn es regelmäßig bespielt wird. Link im Profil direkt auf die kostenlose Prüfung oder /heilpraktiker. Für GEO zählt es wenig, für Vertrauen schon.',
 ]);
 
@@ -115,7 +120,7 @@ r.table(['Leons Aufgabe', 'braucht von dir', 'Aufgabe'], [
   ['L5', 'Definition (fertig, steht oben)', 'M2'],
   ['L8, L10', 'Faktenblock Über uns; Adressen der Verzeichnis-Profile', 'M3, M7'],
   ['L12', 'neuer Vorfilter-Artikel; zusammengeführter Immunsystem-Artikel', 'M5, M6'],
-  ['L15', 'Texte je Tür: /agenturen, /arztpraxen, /heilpraktiker, /hersteller, /compliance-monitoring', 'Texte je Tür'],
+  ['L15', 'Texte je Tür: /agenturen, /arztpraxen, /heilpraktiker, /hersteller, /laufende-website-pruefung', 'Texte je Tür'],
   ['L16', 'Text der Vergleichsseite', 'M10'],
 ], [18, 62, 20]);
 

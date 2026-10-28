@@ -149,7 +149,7 @@ r.table(['#', 'Frage (gekürzt)', 'ChatGPT', 'Perplexity', 'Gemini'], [
   ['', '**Nennungen**', '**3 von 15**', '**4 von 15**', '**0 von 15**'],
 ], [5, 43, 17, 19, 16]);
 r.p('Auf zehn der 15 Fragen nennt keines der drei Systeme PageCompliance. Das sind vor allem die Sachfragen der Zielgruppen: „Darf ich schreiben, dass eine Behandlung hilft?“, „Ist ‚stärkt das Immunsystem‘ erlaubt?“, „Wie vermeide ich als Heilpraktiker eine Abmahnung?“. Wer so fragt, hat ein Risiko im eigenen Text. Das ist genau der Mensch, den der Gratis-Einstieg erreichen soll.');
-r.p('Wer sonst genannt wird, hängt vom System ab. Bei ChatGPT ist Caidera mit 4 von 15 Antworten der meistgenannte Anbieter, vor PageCompliance mit 3. Bei Perplexity liegen Eckada und PageCompliance vorn; Caidera kommt dort nicht vor. Dafür nennt Perplexity Namen, die weder ChatGPT noch Google zeigen, etwa Regly, ClaimGuard und Supplement-Check.eu. Jedes System sieht ein anderes Feld.');
+r.p('Wer sonst genannt wird, hängt vom System ab. Bei ChatGPT ist Caidera mit 4 von 15 Antworten der meistgenannte Anbieter, vor PageCompliance mit 3. Bei Perplexity liegen Eckada und PageCompliance vorn; Caidera kommt dort nicht vor. Dafür nennt Perplexity Namen, die weder ChatGPT noch Google zeigen, etwa Regly und Supplement-Check.eu. Das ebenfalls genannte ClaimGuard ist laut Plan v1 der englische Name von smugos HWG-Wächter. Jedes System sieht ein anderes Feld.');
 
 r.h2('2.4 Google belohnt uns, wo kaum jemand schreibt');
 r.p('PageCompliance steht auf 2 von 20 Suchbegriffen in den Top 10, beide Male auf Platz 1, beide Male mit einem Blogartikel: „schmerzfrei werben Praxis erlaubt“ und „HWG Richtlinien Healthcare Marketing Agentur“. Auf allen acht Suchbegriffen, mit denen jemand ein Werkzeug sucht, steht PageCompliance nicht; keine Produktseite rankt.');
@@ -180,6 +180,7 @@ r.table(['Stelle', 'Live am 27.10.2026', 'Was gilt'], [
   ['Preisseite, Rechnung', '„15 € je Text“, „trägt sich ab dem 24. Text“, gerechnet mit Professional 349 €', 'Rechenbeispiel 15 € bleibt, als Beispiel formuliert; mit Agentur 99 € ab dem 7. Text'],
   ['Preisseite, Worte', '„White-Label“, „Video-Audit“, „Spezialisten für jeden HWG-Paragrafen“', '„In Ihrem Namen“; Einzel-Audit 149 €'],
   ['llms.txt', '„Vorprüfung“, alte Pakete und Preise', 'Definition wörtlich, neue Pakete'],
+  ['/blog, H1', '„Stark werben. Sauber formulieren.“', '„sauber“ ist ein Urteilswort; „Stark werben. Ruhig veröffentlichen.“'],
   ['Artikel „Was bedeutet Vorfilter“', '„KEINE PRÜFUNG“', 'widerspricht dem Claim'],
   ['Artikel Vorher-Nachher', 'Verbot gelte „bei operativen Eingriffen“; BGH-Urteil fehlt', 'auch Unterspritzungen (BGH I ZR 170/24)'],
   ['/ueber-uns', 'nur Vornamen, kein Sitz, kein Jahr, keine Registernummer', 'Firma, Sitz, Gründung, Register, Gründer'],
@@ -198,7 +199,7 @@ r.p('Google selbst schreibt, Optimierung für KI-Suche sei „still SEO“; wede
 r.h2('2.7 Das Feld ist zersplittert, die eigene Kategorie noch frei');
 r.p('Kein Anbieter dominiert. Der sichtbarste steht in 6 von 20 Suchen in den Top 10 (Abbildung 2). Die Hälfte der sichtbarsten Domains verkauft keine Prüfsoftware, sondern Websites für Heilberufe. Die Nachprüfung der Anbieterseiten zeigt, was hinter den Namen steckt:[^wett]');
 r.table(['Anbieter', 'Was es ist', 'Bedeutung für PageCompliance'], [
-  ['smugo („HWG-Wächter“)', 'einmalige Dienstleistung: Durchleuchtung, Bericht, neue Texte; Agenturen als White-Label-Partner; „keine Abos“', 'Gegenentwurf: Service statt Software; Konkurrent bei Agenturen; besetzt das Wort „Wächter“'],
+  ['smugo („HWG-Wächter“, englisch „ClaimGuard“)', 'einmalige Dienstleistung: Durchleuchtung, Bericht, neue Texte; Agenturen als White-Label-Partner; „keine Abos“', 'Gegenentwurf: Service statt Software; Konkurrent bei Agenturen; besetzt das Wort „Wächter“'],
   ['Caidera', 'Plattform für Marketing in regulierten Branchen mit Freigabe-Workflow; Preis auf Anfrage', 'Enterprise; bei ChatGPT meistgenannt'],
   ['Dr. Kaske (MediCheck)', 'KI-Überwachung von Social-Media-Kommentaren für Pharma', 'andere Zielgruppe, besetzt aber die Kategoriefrage'],
   ['AppCore', 'Health Claims als Teil eines CMS-Pakets', 'nur im Paket; Hersteller-Tür'],

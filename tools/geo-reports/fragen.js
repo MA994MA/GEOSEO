@@ -57,7 +57,7 @@ r.table(['Anbieter', 'ChatGPT (Antworten von 15)'], [
   ['Caidera', '4'], ['PageCompliance', '3'], ['Eckada', '2'], ['Symbiofy', '2'], ['rukola.app', '2'], ['HWG-Checker', '2'],
   ['DOCTARIS, AppCore, Dr. Kaske, blee.com, taama.ai, noknots', 'je 1'],
 ], [70, 30]);
-r.p('**Perplexity:** Eckada und PageCompliance liegen vorn, vor Dr. Kaske, AppCore und dem HWG Check von leema. Caidera kommt nicht vor. Nur bei Perplexity tauchen auf: Regly, Cape.io, Improvado, Typetone, Consileon, KI Marketing Studio, Behr’s Digital Health & Nutrition Claims, ClaimGuard, Supplement-Check.eu.');
+r.p('**Perplexity:** Eckada und PageCompliance liegen vorn, vor Dr. Kaske, AppCore und dem HWG Check von leema. Caidera kommt nicht vor. Nur bei Perplexity tauchen auf: Regly, Cape.io, Improvado, Typetone, Consileon, KI Marketing Studio, Behr’s Digital Health & Nutrition Claims, ClaimGuard, Supplement-Check.eu. ClaimGuard ist laut Plan v1 der englische Name von smugos HWG-Wächter, also kein eigener Wettbewerber.');
 r.p('**Gemini:** nennt nur Dr. Kaske als Anbieter (Frage 11).');
 
 r.h1('3 Die 20 Suchbegriffe auf google.de');
@@ -123,7 +123,7 @@ r.table(['Autocomplete (27.10.2026)', 'Geplant'], [
 r.h1('5 Die Konkurrenz');
 r.h2('5.1 Werkzeuge und Dienste (nachgeprüft am 27.10.2026)');
 r.table(['Anbieter', 'Was es wirklich ist', 'Preis laut Seite', 'Bedeutung für uns'], [
-  ['smugo („HWG-Wächter“)', 'einmalige Dienstleistung: Durchleuchtung, Befund-Bericht, neu formulierte Texte, optional Umsetzung im CMS; Shops, Hersteller, Praxen, Heilberufe; Agenturen als White-Label-Partner; DE und Schweiz', 'Erst-Check kostenlos, danach Festpreis nach Umfang, „keine Abos“', 'direkter Gegenentwurf: Service statt Software; Konkurrent bei Agenturen; rankt auf drei Suchbegriffen'],
+  ['smugo („HWG-Wächter“, englisch „ClaimGuard“)', 'einmalige Dienstleistung: Durchleuchtung, Befund-Bericht, neu formulierte Texte, optional Umsetzung im CMS; Shops, Hersteller, Praxen, Heilberufe; Agenturen als White-Label-Partner; DE und Schweiz', 'Erst-Check kostenlos, danach Festpreis nach Umfang, „keine Abos“', 'direkter Gegenentwurf: Service statt Software; Konkurrent bei Agenturen; rankt auf drei Suchbegriffen'],
   ['Caidera', 'Plattform für Marketing-Content in regulierten Branchen (Pharma, MedTech, Food, Kosmetik, Finanzen) mit Freigabe-Workflow', 'nicht genannt, Demo', 'Enterprise; bei ChatGPT meistgenannt (4 von 15)'],
   ['Dr. Kaske (MediCheck, KAI)', 'KI-Überwachung von Social-Media-Kommentaren für Pharma: HWG-Verstöße und Nebenwirkungsmeldungen', 'nicht genannt, Demo', 'andere Zielgruppe, besetzt aber die Kategoriefrage (Frage 11)'],
   ['AppCore', 'Health Claims als Teil eines CMS-Pakets', 'Erst-Audit kostenlos, CMS-Umzug einmalig 990 bis 3.990 € netto', 'Hersteller-Tür, nur im Paket'],

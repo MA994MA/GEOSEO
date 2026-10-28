@@ -16,15 +16,15 @@ r.body.push(new D.Paragraph({ spacing: { after: 120 }, children: [new D.TextRun(
 r.body.push(new D.Paragraph({ spacing: { after: 240 }, children: [new D.TextRun({ text: 'Punkt für Punkt, mit dem Grund dahinter · Stand 28. Oktober 2026', font: 'Helvetica', size: 22, color: '555555' })] }));
 
 r.callout('WORUM ES GEHT', 'Das neue Pricing braucht Reichweite: Praxen, Heilberufe und Hersteller sollen über die Website kommen und kostenlos prüfen. Heute sperrt die Website Gemini aus, erzählt eine alte Geschichte und hat kaum fremde Stimmen. Deine Aufgaben machen die Website lesbar und eindeutig, die Preisseite liegt ganz bei dir. Massi liefert die übrigen Texte und sammelt fremde Stimmen.');
-r.p('Grundlage: GEO-Audit (Teil 1) und GEO-Maßnahmenplan (Teil 2) vom 28. Oktober. Die Nummern L1 bis L17 und E1 bis E5 sind dort dieselben. Textvorschläge in diesem Blatt sind Vorschläge; den Wortlaut gibt Massi frei.', { run: { size: 18, color: '555555' } });
+r.p('Grundlage: GEO-Audit (Teil 1) und GEO-Maßnahmenplan (Teil 2) vom 28. Oktober. Die Nummern L1 bis L17 und E1 bis E5 sind dort dieselben.', { run: { size: 18, color: '555555' } });
 
 r.h1('1 Diese Woche entscheiden');
 r.p('Fünf Entscheidungen, gemeinsam mit Massi. L1, L4, L14 und die Wächter-Seite warten darauf.');
 r.table(['#', 'Entscheidung', 'Empfehlung', 'Warum'], [
   ['E1', 'Google-Extended freigeben?', 'Ja.', 'Ohne Freigabe darf Gemini die Website nicht für Antworten nutzen: heute 0 von 15 Nennungen, Einordnung als FinTech. Preis: Google darf die Texte auch fürs Training nutzen.'],
   ['E2', 'Welche Preise zeigt die Website?', 'Preise v2 geht mit dem Upgrade live. Bis dahin: unbelegte Zahlen sofort raus, kein Preis-Markup, keine Preise in neuen Artikeln.', 'Live stehen Starter und Professional, im Prototyp die neuen Pakete. Zwei Preismodelle verwirren Kunden und KI-Systeme; unbelegte Zahlen sind ein UWG-Risiko.'],
-  ['E3', 'Zeile „Er stellt keine Rechtsberatung dar“ unter den 14 Artikeln?', 'Ersetzen durch „Dieser Artikel zeigt typische Risikostellen. Den Einzelfall bewertet Ihre Kanzlei.“ Mit der Anwältin abstimmen.', 'Der Sprach-Leitfaden sieht die Formel nur in den AGB vor, nicht im Marketing.'],
-  ['E4', 'Name der Wächter-Seite?', 'Seite „Compliance-Monitoring für Gesundheitswerbung“; in der App bleibt „Wächter“. Markenrechtlerin prüft „Wächter“ und „PageCompliance“ vor dem Start.', 'smugo nutzt „HWG-Wächter“; in TMview gibt es aktive „Wächter“-Marken für Software (Klassen 9 und 42).'],
+  ['E3', 'Zeile „Er stellt keine Rechtsberatung dar“ unter den 14 Artikeln?', 'Ersetzen durch „Dieser Artikel zeigt typische Risikostellen. Den Einzelfall bewertet Ihre Kanzlei.“', 'Der Sprach-Leitfaden sieht die Formel nur in den AGB vor, nicht im Marketing.'],
+  ['E4', 'Name der Wächter-Seite?', 'Seite „Laufende Website-Prüfung“ (/laufende-website-pruefung); in der App bleibt „Wächter“. Der Monatsbericht heißt „Prüfbericht“, etwa „Prüfbericht Oktober: Ihre Website war ohne Befund.“', 'smugo nutzt „HWG-Wächter“; in TMview gibt es aktive „Wächter“-Marken für Software (Klassen 9 und 42).'],
   ['E5', 'Trainingssperre für GPTBot, ClaudeBot, CCBot, Applebot-Extended aufheben?', 'Ja, für die öffentlichen Seiten. /api/, /admin/, /dashboard/ bleiben gesperrt.', 'Die Sperre kostet keine Zitate, hält uns aber aus den Trainingsdaten heraus; ein Modell kennt uns dann nur bei Websuche. Öffentlich stehen Marketingtexte, die sich verbreiten sollen. Effekt nicht belegt, kommt frühestens mit der nächsten Modellgeneration; gesammelte Daten lassen sich nicht zurückholen.'],
 ], [6, 20, 34, 40], { size: 15 });
 
@@ -50,9 +50,12 @@ task('L2', '/login und /register aus dem Index nehmen',
   ["export const metadata = { robots: { index: false, follow: true } };"]);
 task('L3', 'Titles, Meta-Descriptions und H1 bereinigen', [
   '**Startseite, Title:** „Healthcare Website Compliance Checker“ ersetzen, Vorschlag: „PageCompliance – die Prüfung für Gesundheitswerbung“ (51 Zeichen).',
-  '**Startseite, Head:** alle drei „Vorprüfung“ entfernen. Meta-Description, Vorschlag: „Werbetexte für Praxen, Heilberufe und Hersteller prüfen: Risiken nach Heilmittelwerbegesetz, Health-Claims-Verordnung und UWG, mit besserem Satz.“',
-  '**Blog, Title:** „Blog - PageCompliance | PageCompliance“ ersetzen, Vorschlag: „Ratgeber Gesundheitswerbung | PageCompliance“.',
-  'Regeln: „Prüfung“ statt „Vorprüfung“, kein „KI“ im Title oder in der H1, „HWG“ nie allein im Title. Endgültige Texte kommen von Massi (M12).',
+  '**Startseite, Head:** alle drei „Vorprüfung“ entfernen. Meta-Description, zwei Varianten von Massi (M12):',
+  '1. „Gesundheitstexte nach HWG, HCVO und UWG prüfen. Für Agenturen, Praxen, Heilberufe und Hersteller: jeder Befund mit besserem Satz, bereit zur Freigabe.“',
+  '2. „Gesundheitstexte prüfen, für Agenturen, Praxen, Heilberufe und Hersteller. Jeder Befund mit Norm und dem besseren Satz, bereit zur Freigabe.“',
+  '**Blog, Title:** „Blog - PageCompliance | PageCompliance“ ersetzen, Vorschlag: „Ratgeber für Gesundheitstexte | PageCompliance“.',
+  '**Blog, H1:** „Stark werben. Sauber formulieren.“ ersetzen durch „Stark werben. Ruhig veröffentlichen.“ „Sauber“ ist laut Leitfaden ein Urteilswort.',
+  'Regeln: „Prüfung“ statt „Vorprüfung“, kein „KI“ im Title oder in der H1, „HWG“ (wird von der Hochschule Ludwigshafen besetzt) nie allein im Title.',
 ], 'Der Title ist das Erste, was Google und KI-Systeme lesen. Heute ist er halb englisch, nennt den alten Begriff und keinen Suchbegriff.',
   'kein „Vorprüfung“ mehr im Roh-HTML einer Seite; Blog-Title ohne doppelte Marke.');
 task('L4', 'Blog-Fußzeile tauschen (nach E3)',
@@ -70,8 +73,8 @@ task('L6', 'Sitemap prüfen',
   'die Sitemap listet nur Seiten mit Status 200 und ohne noindex.');
 task('L7', 'Search Console, Bing Webmaster Tools und IndexNow einrichten', [
   'Google Search Console als Domain-Property bestätigen, Sitemap einreichen. Bing Webmaster Tools anlegen (Import aus der Search Console geht in einem Schritt). IndexNow aktivieren, damit neue und geänderte Seiten sofort an Bing gemeldet werden.',
-  'Massi bekommt Lesezugriff auf beide Werkzeuge.',
-], 'Ohne Search Console gibt es keine genaue Indexzahl und keine Impressionen. Bing zeigt im Bericht „AI Performance“, wie oft Copilot uns zitiert. Damit messen wir den Plan.',
+  'Reihenfolge: erst die Search Console (Domain per DNS-Eintrag bestätigen), dann Bing per Import. Zusammen 1 bis 2 Stunden. Massi bekommt Lesezugriff auf beide Werkzeuge.',
+], 'Beide sind kostenlos und so etwas wie der Produktionsbericht der Suchmaschine: welche Seiten angenommen wurden, welche Fehler haben, wie oft sie gezeigt werden. Ohne Search Console gibt es keine genaue Indexzahl und keine Impressionen. Bing zeigt im Bericht „AI Performance“, wie oft Copilot uns zitiert. Damit messen wir den Plan.',
   'beide Werkzeuge zeigen Daten; Massi hat Zugriff.');
 
 r.h1('3 In 30 Tagen (etwa 4 Tage)');
@@ -86,11 +89,11 @@ task('L8', 'Firmen-Markup auf Startseite und /ueber-uns',
     '  "founder": [', '    { "@type": "Person", "name": "Leon V. Schwahn", "jobTitle": "CEO" },', '    { "@type": "Person", "name": "Massimiliano Ehmann", "jobTitle": "CCO" }', '  ],',
     '  "description": "<Definition wörtlich>",', '  "sameAs": [', '    "https://de.linkedin.com/company/page-compliance",', '    "https://www.munich-startup.de/startups/pagecompliance/"', '  ]', '}']);
 task('L9', 'Suchbegriff unter die H1 der Startseite',
-  'Der Claim bleibt als H1. Direkt darunter eine Zeile, Vorschlag: „Die Prüfung für Gesundheitswerbung nach Heilmittelwerbegesetz, Health-Claims-Verordnung und UWG.“ Dazu den Ersatz für „Für jede Regel ein Spezialist.“ und „12 Paragrafen“ einbauen (Text M12).',
+  'Der Claim bleibt als H1. Direkt darunter eine Zeile, Vorschlag: „Die Prüfung für Gesundheitswerbung nach Heilmittelwerbegesetz, Health-Claims-Verordnung (und UWG).“ Dazu den Ersatz für „Für jede Regel ein Spezialist.“ und „12 Paragrafen“ einbauen (Text M12).',
   'Ein Claim wie „Compliance in Sekunden.“ ist stark, sagt einer Suchmaschine aber nicht, worum es geht. Nachzählbare Prüfer-Zahlen verbietet der Leitfaden.',
   'Heilmittelwerbegesetz steht im Roh-HTML direkt unter der H1.');
 task('L10', '/ueber-uns ausbauen',
-  'Faktenblock von Massi einbauen (M3): Firma, Sitz Grünwald, gegründet 2026, HRB 311850 Amtsgericht München, beide Gründer mit vollem Namen und Rolle, Definition, drei Grundsätze. Dazu das Markup aus L8. Falls dort noch „über 2.500 EU Health Claims“ steht: nur behalten, wenn die Zahl belegt und erklärt ist.',
+  'Faktenblock von Massi einbauen (M3): Firma, Sitz Grünwald, gegründet 2026, HRB 311850 Amtsgericht München, beide Gründer mit vollem Namen und Rolle, Definition, drei Grundsätze. Dazu das Markup aus L8 und je ein Person-Markup für Leon und Massi. Falls dort noch „über 2.500 EU Health Claims“ steht: nur behalten, wenn die Zahl belegt und erklärt ist.',
   'Perplexity zitiert genau diese Seite. Heute stehen dort nur Vornamen, kein Sitz und kein Jahr.',
   'die Seite nennt alle Fakten und trägt das Markup.');
 task('L11', 'Blog-Vorlage erweitern',
@@ -102,7 +105,7 @@ task('L12', 'Weiterleitungen (301) setzen', [
   '`/blog/immunsystem-staerken-health-claim-erlaubt` → `/blog/nem-immunsystem-claims-erlaubt` (M6).',
 ], 'Zwei Seiten zur selben Frage konkurrieren gegeneinander. Die Weiterleitung bündelt sie, und alte Links bleiben gültig.',
   'die alten Adressen antworten mit 301 auf das neue Ziel.');
-task('L13', 'Messung in Plausible',
+task('L13', 'Messung in Plausible?',
   'Besuche aus KI-Systemen als eigene Gruppe sichtbar machen (chatgpt.com, perplexity.ai, gemini.google.com, copilot.microsoft.com). Das Ziel „Anmeldung“ mit Herkunft erfassen. Bei der Anmeldung ein freiwilliges Feld „Wie haben Sie uns gefunden?“ mit der Option „ChatGPT oder anderer KI-Assistent“.',
   'Nur so sehen wir, ob GEO Anmeldungen bringt. Das ist die Kennzahl, um die es im Pricing geht: heute rund 1,6 Anmeldungen von außen im Monat.',
   'die erste Anmeldung mit Herkunft ist in Plausible sichtbar.');
@@ -113,7 +116,8 @@ task('L14', 'Preis-Markup (erst nach E2, wenn Preise v2 live ist)',
 
 r.h1('4 In 90 Tagen (etwa 5 Tage)');
 task('L15', 'Produktseiten je Tür', [
-  '`/agenturen` (gibt es schon; von „Ihr“ auf „Sie“ umstellen), `/arztpraxen`, `/heilpraktiker`, `/hersteller`, `/compliance-monitoring` (nach E4, Zeitform „kommt“, solange nicht live). Texte von Massi.',
+  '`/agenturen` (gibt es schon; von „Ihr“ auf „Sie“ umstellen), `/arztpraxen`, `/heilpraktiker`, `/hersteller`, `/laufende-website-pruefung` (nach E4, Zeitform „kommt“, solange nicht live). Texte von Massi.',
+  'Offen: zusätzlich Seiten für Kaufbegriffe wie `/hwg-pruefung` und `/health-claims-pruefung` (Vorschlag der Strategie im Repo). Erst nach der ersten Messung entscheiden, weil Google vor vervielfachten Seiten warnt.',
   'Ärzte und Heilpraktiker bekommen getrennte Seiten, obwohl dasselbe Paket dahinterliegt.',
 ], 'Auf den acht Suchen nach einem Werkzeug rankt heute keine Produktseite. Wettbewerber tragen den Suchbegriff im Namen. Und Ärzte wollen nicht mit Heilpraktikern in einen Topf.',
   'jede Seite ist live, verlinkt aus Startseite und passenden Artikeln, und steht in der Sitemap.');
@@ -131,7 +135,7 @@ r.bullets([
 
 r.h1('6 Was du von Massi bekommst');
 r.table(['Deine Aufgabe', 'wartet auf', 'von Massi'], [
-  ['L3, L9', 'Titles, Metas, Zeile unter der H1, Startseiten-Texte', 'M12'],
+  ['L3, L9', 'Titles, Meta-Description, Zeile unter der H1, Startseiten-Texte', 'M12'],
   ['L8, L10', 'Faktenblock Über uns; Profile für sameAs', 'M3, M7'],
   ['L12', 'neu geschriebener Vorfilter-Artikel; zusammengeführter Immunsystem-Artikel', 'M5, M6'],
   ['L15, L16', 'Texte je Tür; Vergleichsseite', 'Texte je Tür, M10'],
