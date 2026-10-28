@@ -16,23 +16,25 @@ r.body.push(new D.Paragraph({ spacing: { after: 120 }, children: [new D.TextRun(
 r.body.push(new D.Paragraph({ spacing: { after: 240 }, children: [new D.TextRun({ text: 'Punkt für Punkt, mit dem Grund dahinter · Stand 28. Oktober 2026', font: 'Helvetica', size: 22, color: '555555' })] }));
 
 r.callout('WORUM ES GEHT', 'Das neue Pricing braucht Reichweite: Praxen, Heilberufe und Hersteller sollen über die Website kommen und kostenlos prüfen. Heute sperrt die Website Gemini aus, erzählt eine alte Geschichte und hat kaum fremde Stimmen. Deine Aufgaben machen die Website lesbar und eindeutig. Massi liefert die Texte und sammelt fremde Stimmen.');
-r.p('Grundlage: GEO-Audit (Teil 1) und GEO-Maßnahmenplan (Teil 2) vom 28. Oktober. Die Nummern L1 bis L16 und E1 bis E4 sind dort dieselben. Textvorschläge in diesem Blatt sind Vorschläge; den Wortlaut gibt Massi frei.', { run: { size: 18, color: '555555' } });
+r.p('Grundlage: GEO-Audit (Teil 1) und GEO-Maßnahmenplan (Teil 2) vom 28. Oktober. Die Nummern L1 bis L16 und E1 bis E5 sind dort dieselben. Textvorschläge in diesem Blatt sind Vorschläge; den Wortlaut gibt Massi frei.', { run: { size: 18, color: '555555' } });
 
 r.h1('1 Diese Woche entscheiden');
-r.p('Vier Entscheidungen, gemeinsam mit Massi. L1, L4, L14 und die Wächter-Seite warten darauf.');
+r.p('Fünf Entscheidungen, gemeinsam mit Massi. L1, L4, L14 und die Wächter-Seite warten darauf.');
 r.table(['#', 'Entscheidung', 'Empfehlung', 'Warum'], [
-  ['E1', 'Google-Extended freigeben?', 'Ja.', 'Ohne Freigabe darf Gemini die Website nicht für Antworten nutzen: heute 0 von 15 Nennungen, Einordnung als FinTech. Preis: Google darf die Texte auch fürs Training nutzen. Die Sperre für GPTBot, ClaudeBot, CCBot und Applebot-Extended bleibt.'],
+  ['E1', 'Google-Extended freigeben?', 'Ja.', 'Ohne Freigabe darf Gemini die Website nicht für Antworten nutzen: heute 0 von 15 Nennungen, Einordnung als FinTech. Preis: Google darf die Texte auch fürs Training nutzen.'],
   ['E2', 'Welche Preise zeigt die Website?', 'Preise v2 geht mit dem Upgrade live. Bis dahin: unbelegte Zahlen sofort raus, kein Preis-Markup, keine Preise in neuen Artikeln.', 'Live stehen Starter und Professional, im Prototyp die neuen Pakete. Zwei Preismodelle verwirren Kunden und KI-Systeme; unbelegte Zahlen sind ein UWG-Risiko.'],
   ['E3', 'Zeile „Er stellt keine Rechtsberatung dar“ unter den 14 Artikeln?', 'Ersetzen durch „Dieser Artikel zeigt typische Risikostellen. Den Einzelfall bewertet Ihre Kanzlei.“ Mit der Anwältin abstimmen.', 'Der Sprach-Leitfaden sieht die Formel nur in den AGB vor, nicht im Marketing.'],
   ['E4', 'Name der Wächter-Seite?', 'Seite „Compliance-Monitoring für Gesundheitswerbung“; in der App bleibt „Wächter“. Markenrechtlerin prüft „Wächter“ und „PageCompliance“ vor dem Start.', 'smugo nutzt „HWG-Wächter“; in TMview gibt es aktive „Wächter“-Marken für Software (Klassen 9 und 42).'],
+  ['E5', 'Trainingssperre für GPTBot, ClaudeBot, CCBot, Applebot-Extended aufheben?', 'Ja, für die öffentlichen Seiten. /api/, /admin/, /dashboard/ bleiben gesperrt.', 'Die Sperre kostet keine Zitate, hält uns aber aus den Trainingsdaten heraus; ein Modell kennt uns dann nur bei Websuche. Öffentlich stehen Marketingtexte, die sich verbreiten sollen. Effekt nicht belegt, kommt frühestens mit der nächsten Modellgeneration; gesammelte Daten lassen sich nicht zurückholen.'],
 ], [6, 20, 34, 40], { size: 15 });
 
 r.h1('2 Sofort bauen (zusammen etwa 5 Stunden)');
-task('L1', 'robots.txt: Gemini und DuckDuckGo hereinlassen (nach E1)',
-  'Google-Extended und DuckAssistBot aus der Disallow-Liste nehmen und ausdrücklich erlauben. GPTBot, ClaudeBot, CCBot, Applebot-Extended und den § 44b-Vorbehalt unverändert lassen.',
-  'Beide Zugänge liefern Antworten an Nutzer. Gesperrt kosten sie Sichtbarkeit, ohne Trainingsdaten zu schützen. Gemini hält „PageCompliance“ heute für einen Gattungsbegriff.',
-  'die robots.txt zeigt beide Einträge mit Allow; die Trainingssperren stehen weiter drin.',
-  ['User-agent: Google-Extended', 'Allow: /', '', 'User-agent: DuckAssistBot', 'Allow: /']);
+task('L1', 'robots.txt: KI-Crawler hereinlassen (nach E1 und E5)', [
+  'Google-Extended, DuckAssistBot und, nach E5, GPTBot, ClaudeBot, CCBot und Applebot-Extended aus der Disallow-Liste nehmen und in einer Gruppe erlauben. Den § 44b-Vorbehalt für diese Crawler streichen.',
+  'Wichtig: Ein Crawler mit eigener Gruppe liest die Regeln unter `User-agent: *` nicht mehr. Die Sperren für /api/, /admin/ und /dashboard/ deshalb in der Gruppe wiederholen. Lautet E5 „nein“, nur Google-Extended und DuckAssistBot in die Gruppe aufnehmen.',
+], 'Google-Extended und DuckAssistBot liefern Antworten an Nutzer; gesperrt kosten sie Sichtbarkeit. Gemini hält „PageCompliance“ heute für einen Gattungsbegriff. Die vier Trainingscrawler bringen die öffentlichen Texte in die Trainingsdaten der großen Modelle, damit diese die Marke auch ohne Websuche kennen.',
+  'die robots.txt zeigt die Gruppe mit Allow und den drei Disallow-Zeilen; Meta-ExternalFetcher und alle anderen Regeln bleiben unverändert.',
+  ['# KI-Antworten und Training erlauben (E1, E5)', 'User-agent: Google-Extended', 'User-agent: DuckAssistBot', 'User-agent: GPTBot', 'User-agent: ClaudeBot', 'User-agent: CCBot', 'User-agent: Applebot-Extended', 'Allow: /', 'Disallow: /api/', 'Disallow: /admin/', 'Disallow: /dashboard/']);
 task('L2', '/login und /register aus dem Index nehmen',
   'Auf beiden Seiten `noindex, follow` setzen. Nicht zusätzlich in der robots.txt sperren. In Next.js etwa so:',
   '/login steht auf Platz 3 der Markensuche, vor der Preisseite. Eine Sperre in der robots.txt würde Google daran hindern, das noindex überhaupt zu sehen.',

@@ -48,12 +48,13 @@ r.numbered([
   '**Fremde Stimmen sammeln.** Jede neue Seite bekommt binnen 14 Tagen zwei Erwähnungen außerhalb von pagecompliance.de. Partner-Agenturen zählen doppelt: Sie bringen Links und sind selbst der Hauptkäufer.',
 ]);
 r.figure(FIG('plan_kern.png'), 'Die Antwort und ihre vier Stützen');
-r.p('Der Plan läuft in drei Wellen: sofort (diese Woche), in 30 Tagen, in 90 Tagen. Vier Entscheidungen stehen diese Woche an. Die Tabelle nennt sie mit Empfehlung; Abschnitt 4.3 zeigt die Fakten dahinter, Anhang A für jede Maßnahme den Befund, auf dem sie beruht.');
+r.p('Der Plan läuft in drei Wellen: sofort (diese Woche), in 30 Tagen, in 90 Tagen. Fünf Entscheidungen stehen diese Woche an. Die Tabelle nennt sie mit Empfehlung; Abschnitt 4.3 zeigt die Fakten dahinter, Anhang A für jede Maßnahme den Befund, auf dem sie beruht.');
 r.table(['Entscheidung', 'Frage', 'Empfehlung', 'Abschnitt'], [
-  ['E1', 'Google-Extended freigeben?', 'ja; die Trainingssperre für alle anderen KI-Anbieter bleibt', '3.2'],
+  ['E1', 'Google-Extended freigeben?', 'ja', '3.2'],
   ['E2', 'Welche Preise zeigt die Website?', 'Preise v2 mit dem Upgrade; bis dahin unbelegte Zahlen raus, kein Preis-Markup, keine Preise in neuen Artikeln', '3.3'],
   ['E3', 'Zeile „Er stellt keine Rechtsberatung dar“ unter allen Artikeln?', 'durch eine Zeile ohne diese Formel ersetzen, mit der Anwältin abstimmen', '3.4'],
   ['E4', 'Name der Wächter-Seite?', '„Compliance-Monitoring für Gesundheitswerbung“; Marken vor dem Start prüfen lassen', '3.3'],
+  ['E5', 'Trainingssperre für GPTBot, ClaudeBot, CCBot und Applebot-Extended aufheben?', 'ja, für die öffentlichen Seiten; /api/, /admin/, /dashboard/ bleiben gesperrt', '3.2'],
 ], [14, 30, 44, 12]);
 r.p('Gut belegt ist, was der Plan an Technik und Texten ändert: Er stützt sich auf die Dokumentationen der Anbieter, das Roh-HTML und den Sprach-Leitfaden. Schwach belegt ist, wie schnell fremde Stimmen wirken; dafür gibt es keine verlässliche Zahl, nur das Muster aus dem Audit. Der Plan misst deshalb nach vier Wochen und entscheidet je Seite neu.');
 
@@ -93,7 +94,7 @@ r.p('Daraus folgt die Leitfrage dieses Plans: **Welche Maßnahmen, in welcher Re
 r.h1('2 Problemanalyse: Fünf Befunde bestimmen den Plan');
 r.p('Die Befunde stammen aus dem GEO-Audit und seiner Nachprüfung, aus dem Marketing-Schlüssel vom 19. Oktober, dem Sprach-Leitfaden v1.0 vom 22. Oktober und aus den Dokumentationen von Google, Bing, OpenAI und DuckDuckGo. Jeder Befund steht für sich; zusammen begründen sie die vier Arbeitsfelder in Abschnitt 3.');
 r.h2('2.1 Zwei Zeilen in der robots.txt kosten eine ganze Plattform');
-r.p('Die robots.txt sperrt Google-Extended und DuckAssistBot. Beide liefern Antworten an Nutzer, nicht nur Trainingsdaten. Gemini nennt PageCompliance deshalb in keiner von 15 Antworten und hält den Namen für einen Gattungsbegriff. Die Korrektur kostet zwei Zeilen; sie ist trotzdem eine Entscheidung, weil Google die Texte dann auch für Training nutzen darf (E1).');
+r.p('Die robots.txt sperrt Google-Extended und DuckAssistBot. Beide liefern Antworten an Nutzer, nicht nur Trainingsdaten. Gemini nennt PageCompliance deshalb in keiner von 15 Antworten und hält den Namen für einen Gattungsbegriff. Die Korrektur kostet zwei Zeilen; sie ist trotzdem eine Entscheidung, weil Google die Texte dann auch für Training nutzen darf (E1). Daneben sperrt die robots.txt vier reine Trainingscrawler. Das kostet keine Zitate in Antworten, hält PageCompliance aber aus den Trainingsdaten der großen Modelle heraus; ein Modell kennt die Marke dann nur, wenn es gerade im Netz sucht (E5).');
 r.h2('2.2 Was die Website sagt, sagen die KI-Systeme weiter');
 r.p('Live stehen noch „Vorprüfung“, die alten Pakete Starter und Professional, „White-Label“ Zahlen, die der Leitfaden als unbelegt führt („Anwalt ab 3.000 €“, „Abmahnung ab 5.000 €“), und eine Agentur-Rechnung, die noch mit dem alten Paket Professional rechnet („trägt sich ab dem 24. Text“). Perplexity gibt „technische Vorprüfung“ weiter, Gemini über Munich Startup „FinTech“. Für einen Anbieter, der Werbeaussagen prüft, sind unbelegte Zahlen auf der eigenen Preisseite zudem ein Risiko nach § 5 UWG.[^uwg] Startseite v3 und Preise v2 sind im Prototyp fertig; das Problem ist der Abstand zwischen Prototyp und Live-Seite.');
 r.h2('2.3 Gewonnen wird, wo eine Frage belegt und dünn besetzt ist');
@@ -129,7 +130,7 @@ r.p('**Drei Regeln dazu:** Keine Kampfthemen gegen Behörden. „HWG“ nie alle
 r.h2('3.2 Türen öffnen: die Technik in einem Arbeitstag');
 r.p('Das Sofort-Paket kostet Leon zusammen etwa fünf Stunden. Es behebt alles, was Sichtbarkeit kostet, ohne dass ein Text fehlt. Die vollständige Liste mit Code steht im Blatt „Was Leon tun soll“.');
 r.table(['#', 'Maßnahme', 'Warum'], [
-  ['L1', 'Google-Extended (nach E1) und DuckAssistBot freigeben; GPTBot, ClaudeBot, CCBot, Applebot-Extended bleiben gesperrt', 'öffnet Gemini und DuckAssist; Trainingssperre für die anderen bleibt'],
+  ['L1', 'Google-Extended (nach E1) und DuckAssistBot freigeben; nach E5 auch GPTBot, ClaudeBot, CCBot, Applebot-Extended; /api/, /admin/, /dashboard/ bleiben gesperrt', 'öffnet Gemini und DuckAssist; bringt die öffentlichen Texte in die Trainingsdaten der großen Modelle'],
   ['L2', '/login und /register auf noindex, nicht in der robots.txt sperren', '/login steht auf Platz 3 der Markensuche; eine Sperre würde Google das noindex nicht sehen lassen'],
   ['L3', 'Titles, Meta-Descriptions, H1: „Vorprüfung“ und „Healthcare Website Compliance Checker“ raus, Blog-Title korrigieren', 'der Title ist das Erste, was Google und KI-Systeme lesen'],
   ['L4', 'Blog-Fußzeile tauschen (nach E3)', 'wirkt auf alle 14 Artikel auf einmal'],
@@ -138,6 +139,7 @@ r.table(['#', 'Maßnahme', 'Warum'], [
   ['L7', 'Search Console, Bing Webmaster Tools, IndexNow einrichten', 'ohne sie keine genaue Messung; Bing zeigt Zitate in Copilot'],
 ], [7, 50, 43]);
 r.p('**Entscheidung E1.** Bei heute null Nennungen in Gemini ist die Freigabe ein lohnender Tausch. Sie ist notwendig, aber nicht ausreichend: Gemini zitiert zusätzlich, was bei Google rankt. Deshalb gehören die Arbeitsfelder 3.4 und 3.5 dazu.');
+r.p('**Entscheidung E5.** Die Sperre für GPTBot, ClaudeBot, CCBot und Applebot-Extended stammt aus der bestehenden robots.txt. Sie schützt die Texte davor, Modelle zu trainieren, die dann dieselben Antworten kostenlos geben, und hält den Vorbehalt nach § 44b UrhG aufrecht. Dagegen steht der Engpass: Kaum ein Modell kennt PageCompliance. Was im Training steckt, weiß ein Modell auch ohne Websuche. CCBot wiegt am schwersten, weil Common Crawl breit für Trainingsdatensätze weiterverwendet wird. Öffentlich stehen Marketingtexte, die sich verbreiten sollen; die Prüflogik steht nicht auf der Website, und gewonnen wird laut Leitfaden über den Weg bis zur Freigabe. Empfehlung: freigeben für die öffentlichen Seiten. Zwei Vorbehalte: Der Effekt ist nicht belegt und frühestens mit der nächsten Modellgeneration sichtbar, und gesammelte Daten lassen sich nicht zurückholen.');
 
 r.h2('3.3 Mit einer Stimme sprechen');
 r.p('Jeder Text über PageCompliance trägt dieselbe Definition, wörtlich: Website, llms.txt, LinkedIn, Munich Startup, OMR Reviews, jeder Gastbeitrag.');
@@ -254,17 +256,18 @@ r.table(['#', 'Wann', 'Aufgabe', 'Fertig, wenn'], [
 r.h2('4.2 Aufgaben Leon: Technik');
 r.p('Die vollständige Liste mit Code, Textvorschlägen und „Fertig, wenn“ steht im Blatt „Was Leon tun soll“. Kurzfassung:');
 r.table(['Wann', 'Aufgaben', 'Aufwand'], [
-  ['sofort', 'L1 robots.txt (nach E1) · L2 noindex /login, /register · L3 Titles, Metas, H1 · L4 Blog-Fußzeile (nach E3) · L5 llms.txt · L6 Sitemap · L7 Search Console, Bing, IndexNow', 'etwa 5 Stunden'],
+  ['sofort', 'L1 robots.txt (nach E1 und E5) · L2 noindex /login, /register · L3 Titles, Metas, H1 · L4 Blog-Fußzeile (nach E3) · L5 llms.txt · L6 Sitemap · L7 Search Console, Bing, IndexNow', 'etwa 5 Stunden'],
   ['30 Tage', 'L8 Firmen-Markup · L9 Suchbegriff unter der H1 · L10 /ueber-uns · L11 Blog-Vorlage (Stand, Autor, Aktenzeichen, Links) · L12 Weiterleitungen · L13 Messung in Plausible · L14 Preis-Markup (nach E2)', 'etwa 4 Tage'],
   ['90 Tage', 'L15 Produktseiten je Tür · L16 Vergleichsseite', 'etwa 5 Tage'],
 ], [12, 70, 18]);
 
-r.h2('4.3 Vier Entscheidungen für diese Woche');
+r.h2('4.3 Fünf Entscheidungen für diese Woche');
 r.table(['#', 'Frage', 'Fakten', 'Empfehlung'], [
-  ['E1', 'Google-Extended freigeben?', 'Der Token steuert, ob Inhalte für Training künftiger Gemini-Modelle und für Grounding in Gemini Apps und Vertex AI genutzt werden; auf Google-Suche und Ranking hat er keinen Einfluss. Gemini nennt PageCompliance in 0 von 15 Antworten.', 'Freigeben. Notwendig, aber nicht ausreichend: Gemini braucht zusätzlich Rankings. Der Vorbehalt nach § 44b UrhG gegenüber GPTBot, ClaudeBot, CCBot und Applebot-Extended bleibt.'],
+  ['E1', 'Google-Extended freigeben?', 'Der Token steuert, ob Inhalte für Training künftiger Gemini-Modelle und für Grounding in Gemini Apps und Vertex AI genutzt werden; auf Google-Suche und Ranking hat er keinen Einfluss. Gemini nennt PageCompliance in 0 von 15 Antworten.', 'Freigeben. Notwendig, aber nicht ausreichend: Gemini braucht zusätzlich Rankings.'],
   ['E2', 'Welches Preismodell zeigt die Website?', 'Live: Starter 99 €, Professional 349 €, Enterprise 699 €, Gratis 2.400 Wörter ohne Konto. Entschieden laut Pricing: Gratis, Agentur 99 €, Team 249 €. Arbeitswerte: Praxis 29 €, Hersteller 99 €, Einzel-Audit 149 €.', 'Preise v2 mit dem Upgrade live. Bis dahin unbelegte Zahlen raus (M1), kein Preis-Markup, keine Preise in neuen Artikeln. Markup zuerst für Gratis, Agentur, Team.'],
   ['E3', 'Zeile „Er stellt keine Rechtsberatung dar“ unter allen 14 Artikeln?', 'Leitfaden 2.4: „Keine Rechtsberatung“ nur in den AGB, nicht im Marketing. Die Zeile steht heute in der Blog-Vorlage.', '„Dieser Artikel zeigt typische Risikostellen. Den Einzelfall bewertet Ihre Kanzlei.“ Mit der Anwältin abstimmen.'],
   ['E4', 'Name der Wächter-Seite und Marke?', 'smugo nutzt „HWG-Wächter“. TMview: keine Marke „HWG-Wächter“, rund 350 Einträge „Wächter“, aktive Marken in den Klassen 9 und 42; „PageCompliance“ ohne Treffer.', 'Seite „Compliance-Monitoring für Gesundheitswerbung“; App-Name „Wächter“; „Wächter“ und eine eigene Anmeldung von „PageCompliance“ vor dem Start prüfen lassen.'],
+  ['E5', 'Trainingssperre für GPTBot, ClaudeBot, CCBot und Applebot-Extended aufheben?', 'GPTBot, ClaudeBot, CCBot und Applebot-Extended sammeln nur Trainingsdaten; die Zugänge für Antworten (OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, PerplexityBot) sind getrennt und schon offen. Common Crawl (CCBot) wird breit für Trainingsdatensätze weiterverwendet. Einmal gesammelte Daten bleiben in den Archiven.', 'Freigeben für die öffentlichen Seiten; /api/, /admin/, /dashboard/ bleiben gesperrt. Der Engpass ist Bekanntheit, nicht Schutz: Öffentlich stehen Marketingtexte, die sich verbreiten sollen. Der Effekt ist nicht belegt und frühestens mit der nächsten Modellgeneration sichtbar.'],
 ], [6, 18, 40, 36], { size: 15 });
 
 r.h2('4.4 Offene Punkte');
@@ -290,7 +293,7 @@ r.p('Nach der Messung bekommt jede Seite eine von vier Entscheidungen: halten, v
 
 r.h2('4.6 Die ersten vier Wochen');
 r.table(['Schritt', 'Abgeschlossen, wenn'], [
-  ['1 E1 bis E4 entscheiden', 'Leon und Massi haben alle vier entschieden und notiert'],
+  ['1 E1 bis E5 entscheiden', 'Leon und Massi haben alle fünf entschieden und notiert'],
   ['2 Sofort-Paket bauen (L1 bis L7) und Preisseite bereinigen (M1)', 'robots.txt, noindex, Titles und llms.txt sind live; keine unbelegte Zahl steht mehr auf der Website'],
   ['3 Eine Stimme herstellen (M2, M3, M12, L8 bis L10)', 'Website, LinkedIn und Munich Startup tragen die Definition wörtlich; /ueber-uns hat den Faktenblock'],
   ['4 Bestand reparieren (M4, M5, M6, L11, L12)', 'Vorher-Nachher korrigiert; Vorfilter neu; Immunsystem zusammengeführt; Vorlage mit Stand, Autor, Links'],
@@ -313,6 +316,7 @@ r.table(['Maßnahme', 'Inhalt', 'Beruht auf Befund', 'Quelle'], [
   ['M10, L16', 'Vergleichsseite nach Kategorien', 'Kategorie frei (Audit 2.7)', '§ 6 UWG; Leitfaden 5.3'],
   ['E3, L4', 'Hinweiszeile im Blog', 'Widerspruch zum Leitfaden', 'Leitfaden 2.4'],
   ['E4', 'Compliance-Monitoring', 'smugo „HWG-Wächter“; Wächter-Marken', 'TMview 27.10.'],
+  ['E5, L1', 'Trainingscrawler freigeben', 'kaum ein Modell kennt die Marke (Audit 2.3, 2.6)', 'Anthropic Help Center; OpenAI-Dokumentation; Common Crawl'],
   ['L13, M13', 'Messung', 'ein Durchlauf ist ein Schnappschuss (Audit 3.3)', 'Plausible, Search Console, Bing'],
 ], [16, 28, 32, 24], { size: 15 });
 
