@@ -10,17 +10,18 @@ function folie(nr, title, minutes, onSlide, say) {
 }
 
 r.body.push(new D.Paragraph({ spacing: { before: 200, after: 120 }, children: [new D.TextRun({ text: 'GEO-MASSNAHMENPLAN · SPRECHSKRIPT', font: 'Helvetica', size: 15, color: '6B6B6B', characterSpacing: 30 })] }));
-r.body.push(new D.Paragraph({ spacing: { after: 120 }, children: [new D.TextRun({ text: 'Mehr Reichweite über Google und KI', font: 'Helvetica', bold: true, size: 44 })] }));
-r.body.push(new D.Paragraph({ spacing: { after: 240 }, children: [new D.TextRun({ text: 'Sprechskript für das Gespräch mit Leon · 8 Folien · etwa 15 Minuten · Stand 28. Oktober 2026', font: 'Helvetica', size: 22, color: '555555' })] }));
-r.callout('ZIEL DES GESPRÄCHS', 'Leon weiß am Ende, was er tun soll und warum, was du tust, was uns das bringt, und ihr habt die fünf Entscheidungen getroffen oder einen Termin dafür.');
+r.body.push(new D.Paragraph({ spacing: { after: 120 }, children: [new D.TextRun({ text: 'GEO und SEO im Zusammenspiel mit unseren Kampagnen', font: 'Helvetica', bold: true, size: 44 })] }));
+r.body.push(new D.Paragraph({ spacing: { after: 240 }, children: [new D.TextRun({ text: 'Sprechskript für das Gespräch mit Leon · 9 Folien · etwa 18 Minuten · Stand 28. Oktober 2026', font: 'Helvetica', size: 22, color: '555555' })] }));
+r.callout('ZIEL DES GESPRÄCHS', 'Leon weiß am Ende, was er tun soll und warum, was du tust, wie die Maßnahmen die Kampagnen tragen, was uns das bringt, und ihr habt die fünf Entscheidungen getroffen oder einen Termin dafür.');
 
 r.h1('Das Skript');
 
-folie(1, 'Worum es geht', '1 Minute',
-  'Ziel April 2027: 20 zahlende Organisationen, 3.980 € im Monat. Heute: rund 1,6 Anmeldungen von außen im Monat.',
+folie(1, 'Worum es geht', '1,5 Minuten',
+  'Maßnahmen für Google und KI-Suche (SEO und GEO) in Verbindung mit unseren Marketing-Kampagnen. Ziel April 2027: 20 zahlende Organisationen, 3.980 € im Monat.',
   [
-    'Leon, du kennst die Rechnung aus dem Pricing-Bericht: Bis April brauchen wir 20 zahlende Organisationen und 3.980 € im Monat. Der Bericht sagt klar: Der Engpass ist nicht der Preis, sondern die Reichweite. Heute kommen rund 1,6 Anmeldungen im Monat von Leuten, die wir nicht kennen.',
-    'Agenturen holen wir über Vorführungen. Praxen, Heilberufe und Hersteller sollen aber über die Website kommen und kostenlos prüfen. Das klappt nur, wenn sie uns finden: bei Google und in ChatGPT, Perplexity und Gemini. Genau darum geht es heute.',
+    'Leon, heute geht es um die Maßnahmen für Google und die KI-Suche, also SEO und GEO, und darum, wie sie mit unseren Marketing-Kampagnen zusammenspielen. Das gehört zusammen: Eine Kampagne weckt Interesse. Wer neugierig wird, googelt danach oder fragt ChatGPT. Findet er dort nichts oder liest eine alte Geschichte, ist die Kampagne verpufft.',
+    'Der Hintergrund ist der Pricing-Bericht: Bis April brauchen wir 20 zahlende Organisationen und 3.980 € im Monat. Der Engpass ist nicht der Preis, sondern die Reichweite. Heute kommen rund 1,6 Anmeldungen im Monat von Leuten, die wir nicht kennen.',
+    'Agenturen holen wir über Vorführungen. Praxen, Heilberufe und Hersteller sollen über Kampagnen und die Website kommen und kostenlos prüfen. Dafür müssen sie uns finden, bei Google und in ChatGPT, Perplexity und Gemini, und überall dieselbe Geschichte lesen.',
   ]);
 
 folie(2, 'Was das Audit zeigt', '2 Minuten',
@@ -31,7 +32,24 @@ folie(2, 'Was das Audit zeigt', '2 Minuten',
     'Aber insgesamt sind wir kaum sichtbar, und dafür gibt es drei Gründe. Erstens: Wir sperren Gemini selbst aus, mit einer Zeile in der robots.txt. Gemini hält PageCompliance deshalb für einen Allgemeinbegriff und ordnet uns dem FinTech-Bereich zu. Zweitens: Unsere eigene Website erzählt noch die alte Geschichte, mit „Vorprüfung“, den alten Paketen und Zahlen, die wir nicht belegen können. Genau das geben die KI-Systeme weiter. Drittens: Außer LinkedIn und Munich Startup spricht niemand über uns. Google und die KI-Systeme vertrauen aber vor allem fremden Quellen.',
   ]);
 
-folie(3, 'Was uns das bringt', '2 Minuten',
+folie(3, 'Wie Suche und Kampagnen zusammenspielen', '2,5 Minuten',
+  'Kampagne weckt Interesse → Google und KI fangen es auf → unsere Seite führt in die kostenlose Prüfung. Reihenfolge nach dem Fahrplan im Marketing-Schlüssel.',
+  [
+    'Der Marketing-Schlüssel hat einen Fahrplan für die Kampagnen. Der GEO-Plan baut für jeden Schritt den Landeplatz in der Suche. Drei Dinge greifen ineinander.',
+    'Erstens: Jede Kampagne braucht eine Seite, auf der sie landet. Wer unseren LinkedIn-Beitrag sieht und danach googelt, muss die passende Seite finden, in derselben Sprache.',
+    'Zweitens: Jeder neue Artikel ist Rohstoff für die Kampagne. Unser Seitenformat, also riskanter Satz, Norm, besserer Satz, ist genau die LinkedIn-Serie „Ein Satz, drei Fassungen“. Wir schreiben einmal und nutzen es zweimal.',
+    'Drittens: Kampagnen bringen fremde Stimmen. Wenn ein Verband, eine Fachschule oder eine Agentur unsere Kampagne aufgreift, ist das genau die Autorität von außen, die uns bei Google und in den KI-Antworten fehlt.',
+  ]);
+r.table(['Fahrplan', 'Kampagne (Marketing-Schlüssel)', 'Was die Suche dafür liefert'], [
+  ['1 Agenturen', '„Ein Satz, drei Fassungen“ auf LinkedIn; „Bringen Sie zum Pitch mit, was Sie gefunden haben“', 'Seite /agenturen; Artikel „HWG-Leitfaden für Healthcare-Agenturen“ (Platz 1); neuer Artikel zur Preisfrage; Agentur-Hinweis in jedem Artikel'],
+  ['2 Über Agenturen in die Praxen', '„Ihre Kunden prüfen selbst. Sie bleiben dran. 15 % für Sie.“', 'Seiten /arztpraxen und /heilpraktiker; Fußzeile „geprüft mit PageCompliance“ wird in der Suche wiedererkannt'],
+  ['3 Heilpraktiker direkt', '„Der Satz, den Sie nicht mehr sagen dürfen“ über Verbände, Fachschulen, Instagram', 'Artikel „Sind Heilversprechen strafbar?“ und „Heilversprechen: die besseren Sätze“; Umbau des Heilpraktiker-Artikels'],
+  ['4 Arztpraxen direkt', '„So sieht ein Patient Ihre Praxis“', 'Artikel „Welche Werbung darf ein Arzt machen?“ und „Botox und Hyaluron“; korrigierter Vorher-Nachher-Artikel'],
+  ['5 Hersteller, nach dem Preistest mit tigovit', '„Eine Kapsel mehr“', 'zusammengeführter Immunsystem-Artikel; Health-Claims-Beispiele; Seite /hersteller'],
+], [18, 38, 44], { size: 15 });
+r.p('Hersteller kommen erst nach dem Preistest mit tigovit, so steht es im Fahrplan. Der Fahrplan selbst ist ein Vorschlag zur Diskussion. Und bei jeder Anmeldung messen wir, ob sie über eine Kampagne, über Google oder über ein KI-System kam.', { spacing: { after: 120, line: 310 } });
+
+folie(4, 'Was uns das bringt', '2 Minuten',
   'Die Website wird zum Weg in den Gratis-Einstieg. Frage → unsere Seite → kostenlos prüfen → Paket.',
   [
     'Der Plan macht die Website zu dem Weg, den das Pricing braucht. Jemand fragt bei Google oder ChatGPT: „Darf ich schmerzfrei schreiben?“ Er landet auf unserer Seite. Die zeigt den riskanten Satz, die Norm und den besseren Satz. Und am Ende steht: „Ihren Satz kostenlos prüfen.“ Damit ist er im Gratis-Einstieg mit drei Prüfungen im Monat. Ab da trägt das Pricing.',
@@ -40,7 +58,7 @@ folie(3, 'Was uns das bringt', '2 Minuten',
     'Woran wir es messen: Nach vier Wochen fragen wir dieselben 15 Fragen und 20 Suchbegriffe noch mal ab. In 90 Tagen soll Gemini richtig sagen, wer wir sind. Wir wollen mindestens fünf fremde Quellen statt zwei, und zwei der neuen Artikel sollen in den Top 10 stehen. Und wir sehen bei jeder Anmeldung, woher sie kommt.',
   ]);
 
-folie(4, 'Deine Aufgaben, Leon: sofort', '2 Minuten',
+folie(5, 'Deine Aufgaben, Leon: sofort', '2 Minuten',
   'Etwa 5 Stunden Technik plus Preisseite. L1 bis L7 und L17.',
   [
     'Dein Teil ist die Technik und die Preise. Das meiste ist schnell gemacht, und es wirkt sofort.',
@@ -51,7 +69,7 @@ folie(4, 'Deine Aufgaben, Leon: sofort', '2 Minuten',
     'Dazu Kleinkram mit Wirkung: die llms.txt neu, die Sitemap prüfen, die Fußzeile im Blog tauschen, Search Console und Bing einrichten. Ohne die beiden Werkzeuge können wir nichts messen.',
   ]);
 
-folie(5, 'Deine Aufgaben, Leon: 30 und 90 Tage', '1,5 Minuten',
+folie(6, 'Deine Aufgaben, Leon: 30 und 90 Tage', '1,5 Minuten',
   '30 Tage: Firmen-Markup, Über uns, Blog-Vorlage, Weiterleitungen, Messung, Preis-Markup. 90 Tage: Seiten je Zielgruppe, Vergleichsseite.',
   [
     'In den nächsten 30 Tagen machen wir aus PageCompliance eine Firma, die Maschinen erkennen. Du baust ein Firmen-Markup mit Sitz, Gründung, Registernummer und uns beiden als Gründer. Warum: Gemini holt diese Fakten heute aus Creditreform statt von uns.',
@@ -59,7 +77,7 @@ folie(5, 'Deine Aufgaben, Leon: 30 und 90 Tage', '1,5 Minuten',
     'Bis Tag 90 dann eine Seite je Zielgruppe: Agenturen, Arztpraxen, Heilpraktiker, Hersteller und die Seite „Laufende Website-Prüfung“ für den Wächter. Dazu eine Vergleichsseite nach Kategorien, ohne einen Wettbewerber anzugreifen. Warum: Bei den acht Suchen nach einem Werkzeug steht heute keine einzige Seite von uns.',
   ]);
 
-folie(6, 'Meine Aufgaben', '2 Minuten',
+folie(7, 'Meine Aufgaben', '2 Minuten',
   'Eine Stimme, richtige Inhalte, fremde Stimmen. M2 bis M14.',
   [
     'Mein Teil löst den eigentlichen Engpass: Wir sprechen überall gleich, unsere Inhalte stimmen, und andere sprechen über uns.',
@@ -69,7 +87,7 @@ folie(6, 'Meine Aufgaben', '2 Minuten',
     'Bis Tag 90: Text für die Vergleichsseite, die Wiederholungsmessung und eine anwaltliche Durchsicht der heiklen Formulierungen.',
   ]);
 
-folie(7, 'Was wir heute entscheiden', '3 Minuten',
+folie(8, 'Was wir heute entscheiden', '3 Minuten',
   'E1 bis E5, dazu drei offene Punkte.',
   [
     'Fünf Entscheidungen brauche ich heute von uns beiden.',
@@ -81,16 +99,18 @@ folie(7, 'Was wir heute entscheiden', '3 Minuten',
     'Dazu drei offene Punkte für dich: Bleiben wir bei Plausible? Beauftragen wir eine Markenrechtlerin für „Wächter“ und „PageCompliance“? Und wann führst du die Gespräche mit den Praxen und tigovit? Davon hängen die Preise ab, und damit Preis-Markup und Zielgruppen-Seiten.',
   ]);
 
-folie(8, 'Die nächsten vier Wochen', '1,5 Minuten',
+folie(9, 'Die nächsten vier Wochen', '1,5 Minuten',
   'Woche 1 entscheiden und Sofort-Paket · Woche 2 eine Stimme · Woche 3 Bestand reparieren · Woche 4 erste Artikel und Messung.',
   [
     'So sieht der Monat aus. Diese Woche entscheiden wir, du baust das Sofort-Paket und bereinigst die Preisseite. Danach stellen wir überall auf eine Stimme um: Website, LinkedIn, Munich Startup, „Über uns“. Dann reparieren wir die alten Artikel, und dann gehen die ersten neuen Artikel online, jeder mit LinkedIn-Beitrag.',
     'Vier Wochen nach dem Sofort-Paket messen wir zum ersten Mal nach. Dann entscheiden wir für jede Seite: halten, verlinken, umschreiben oder aufgeben.',
+    'Parallel startet Schritt 1 des Fahrplans, die Kampagne an Agenturen. Bis dahin sollen die Seiten, auf denen sie landet, schon die neue Geschichte erzählen. Deshalb kommen Sofort-Paket und Preisseite zuerst.',
     'Alles steht in deinem Blatt „Was Leon tun soll“, mit Code und „Fertig, wenn“. Wenn wir die fünf Entscheidungen heute treffen, kannst du morgen anfangen.',
   ]);
 
 r.h1('Falls Leon fragt');
 r.table(['Frage', 'Antwort'], [
+  ['„Warum nicht erst Kampagnen und SEO später?“', 'Weil Kampagnen ohne Landeplatz verpuffen. Wer heute nach einem Post googelt, findet „Vorprüfung“ und alte Preise. Das Sofort-Paket dauert eine Woche; danach trägt jede Kampagne doppelt.'],
   ['„Warum nicht einfach mehr Artikel?“', 'Weil uns nicht der Inhalt fehlt, sondern Autorität von außen. Wo kaum jemand schreibt, stehen wir schon auf Platz 1. Wo andere mit Links stehen, kommen wir nicht in die Top 10, auch mit passendem Artikel. Google warnt außerdem selbst vor Masse.'],
   ['„Geben wir mit der Freigabe nicht unser Wissen her?“', 'Öffentlich stehen nur Marketingtexte, die sich verbreiten sollen. Die Prüflogik steht nicht auf der Website. Und wir gewinnen über den Weg bis zur Freigabe, nicht über einzelne Artikel.'],
   ['„Was, wenn es nichts bringt?“', 'Wir messen nach vier Wochen mit denselben Fragen. Was nicht trägt, bauen wir um oder lassen es. Der größte Teil kostet nur Zeit, kein Geld.'],
